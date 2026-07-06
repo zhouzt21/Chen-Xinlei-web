@@ -529,7 +529,7 @@ const publications = [
     type: "Conference",
     year: "2022",
     note: "",
-    image: localAsset("images/deliversense-ubicomp-2022.png"),
+    image: localAsset("images/DeliverSense.png"),
     link: "https://dl.acm.org/doi/abs/10.1145/3544793.3560412",
     authors: "Xuecheng Chen, Haoyang Wang, Zuxin Li, Wenbo Ding, Fan Dang, Chengye Wu, Xinlei Chen† \nBest Paper Award (1 out of all submissions)"
   },
