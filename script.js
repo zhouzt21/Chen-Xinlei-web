@@ -1,6 +1,4 @@
-const SITE_BASE = "https://chen-xinlei.com/";
-
-const asset = (path) => `${SITE_BASE}${path}`;
+const asset = (path) => path.startsWith("video/") ? `images/${path}` : path;
 const localAsset = (path) => path;
 
 const news = [

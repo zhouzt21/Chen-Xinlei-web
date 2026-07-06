@@ -13,7 +13,7 @@ This is a static single-page academic homepage prototype for Prof. Xinlei Chen.
 
 ## Preview
 
-Open `index.html` directly in a browser. The prototype references current media assets from `https://chen-xinlei.com/`, so an internet connection is needed for the profile photo, project videos, and publication thumbnails that have not been localized into `images/`.
+Open `index.html` directly in a browser. Runtime media assets are stored in `images/`, including publication thumbnails, profile/contact icons, the profile photo, CV, and project videos.
 
 For a local HTTP preview:
 
@@ -25,7 +25,7 @@ Then open `http://127.0.0.1:8000/`.
 
 ## Verification
 
-The visual and interaction smoke test uses the local Chrome installation and writes screenshots to `screenshots/`.
+The visual and interaction smoke test uses the local Chrome installation. Generated screenshots are temporary artifacts and should not be committed.
 
 ```bash
 npm install --ignore-scripts
