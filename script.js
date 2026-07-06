@@ -254,6 +254,9 @@ const projectGroups = [
 ];
 
 const publications = [
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace",
     venue: "ACM KDD 2026 Oral",
@@ -264,6 +267,10 @@ const publications = [
     link: "https://arxiv.org/abs/2604.07973",
     authors: "Baining Zhao, Ziyou Wang, Jianjie Fang, Zile Zhou, Yanggang Xu, Yatai Ji, Jiacheng Xu, Qian Zhang, Weichen Zhang, Chen Gao, Xinlei Chen"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
     venue: "ICML 2026",
@@ -274,6 +281,7 @@ const publications = [
     link: "https://arxiv.org/abs/2605.03941",
     authors: "Jianjie Fang*, Yingshan Lei*, Qin Wan*, Ziyou Wang, Yuchao Huang, Yongyan Xu, Baining Zhao, Weichen Zhang, Chen Gao, Xinlei Chen, Yong Li"
   },
+  */
   {
     title: "x2-Fusion: Cross-Modality and Cross-Dimension Flow Estimation in Event Edge Space",
     venue: "CVPR 2026 Highlight",
@@ -474,6 +482,9 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/10621374",
     authors: "Zuxin Li, Fanhang Man, Xuecheng Chen, Susu Xu, Fan Dang, Xiao-Ping Zhang, Xinlei Chen†"
   },
+  /*
+  Commented out after corresponding-author audit:
+  the available PDF identifies Fan Dang as corresponding author.
   {
     title: "BlueKey: Exploiting Bluetooth Low Energy for Enhanced Physical-Layer Key Generation",
     venue: "IEEE INFOCOM 2024",
@@ -484,6 +495,10 @@ const publications = [
     link: "https://ieeexplore.ieee.org/document/10621142",
     authors: "Yawen Zheng, Fan Dang, Zihao Yang, Jinyan Jiang, Xu Wang, Lin Wang, Kebin Liu, Xinlei Chen, Yunhao Liu"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  current evidence marks other authors, not Xinlei Chen, as corresponding authors.
   {
     title: "StreamingTag: A Scalable Piracy Tracking Solution for Mobile Streaming Services",
     venue: "ACM MobiCom 2022",
@@ -494,6 +509,10 @@ const publications = [
     link: "https://dl.acm.org/doi/abs/10.1145/3495243.3560521",
     authors: "Xinqi Jin*, Fan Dang*†, Qi-An Fu, Lingkun Li, Guanyan Peng, Xinlei Chen, Kebin Liu, Yunhao Liu†"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "LSync: A Universal Event-Synchronizing Solution for Live Streaming",
     venue: "IEEE INFOCOM 2022",
@@ -504,6 +523,7 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/9796933/",
     authors: "Yifan Xu, Fan Dang, Rongwu Xu, Xinlei Chen, Yunhao Liu"
   },
+  */
   {
     title: "Califormer: Leveraging Unlabeled Measurements to Calibrate Sensors with Self-supervised Learning",
     venue: "ACM UbiComp CPD 2023 (WKS)",
@@ -532,8 +552,11 @@ const publications = [
     note: "",
     image: asset("images/PGA.png"),
     link: "https://dl.acm.org/doi/10.1145/3267305.3274179",
-    authors: "Xinlei Chen, Xiangxiang Xu, Xinyu Liu, Shijia Pan, Jiayou He, Hae Young Noh, Lin Zhang, Pei Zhang"
+    authors: "Xinlei Chen†, Xiangxiang Xu, Xinyu Liu, Shijia Pan, Jiayou He, Hae Young Noh, Lin Zhang, Pei Zhang"
   },
+  /*
+  Commented out after corresponding-author audit:
+  the current source marks Pei Zhang, not Xinlei Chen, as corresponding author.
   {
     title: "DrunkWalk: Collaborative and Adaptive Planning for Navigation of Micro-Aerial Sensor Swarms",
     venue: "ACM SenSys 2015",
@@ -543,6 +566,17 @@ const publications = [
     image: asset("images/drunkwalk_SenSys.png"),
     link: "https://dl.acm.org/doi/10.1145/2809695.2809724",
     authors: "Xinlei Chen, Aveek Purohit, Carlos Ruiz Dominguez, Stefano Carpin, Pei Zhang†"
+  },
+  */
+  {
+    title: "mmE-Loc: Facilitating Accurate Drone Landing with Ultra-High-Frequency Localization",
+    venue: "IEEE TMC",
+    type: "Journal",
+    year: "2026",
+    note: "",
+    image: asset("images/mmeloc_SenSys.png"),
+    link: "https://doi.org/10.1109/tmc.2026.3666235",
+    authors: "Haoyang Wang, Jingao Xu, Xinyu Luo, Ting Zhang, Xuecheng Chen, Ruiyang Duan, Yunhao Liu, Jianfeng Zheng, Weijie Hong, Xiaoqiang Ji, Yuqing Tang, Xinlei Chen†"
   },
   {
     title: "STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting",
@@ -574,6 +608,9 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/11186147",
     authors: "Haoyang Wang, Jingao Xu, Chenyu Zhao, Yuhan Cheng, Xuecheng Chen, Chaopeng Hong, Xiao-Ping Zhang, Yunhao Liu, Xinlei Chen†"
   },
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "A Novel Integrated Sensing and Communication Scheme in UAVs-Enabled Vehicular Networks with MARL-Driven Adaptive Control",
     venue: "IEEE TMC",
@@ -584,6 +621,10 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/11087623",
     authors: "Ziyuan Wang, Xiao-Ping Zhang, Wenbo Ding, Yuhan Dong, Xinlei Chen"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  the available PDF identifies Fan Dang as corresponding author.
   {
     title: "BlueKey: Exploiting Bluetooth Low Energy for Enhanced Physical-Layer Key Generation",
     venue: "IEEE TMC",
@@ -594,6 +635,7 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/11134804",
     authors: "Yawen Zheng, Fan Dang, Zihao Yang, Jinyan Jiang, Xu Wang, Lin Wang, Kebin Liu, Xinlei Chen, Yunhao Liu"
   },
+  */
   {
     title: "QUIDS: Quality-informed Incentive-driven Multi-agent Dispatching System for Mobile Crowdsensing",
     venue: "IEEE IoT-J",
@@ -664,6 +706,9 @@ const publications = [
     link: "https://ieeexplore.ieee.org/document/10502270",
     authors: "Xuecheng Chen, Zijian Xiao, Yuhan Cheng, ChenChun Hsia, Haoyang Wang, Jingao Xu, Susu Xu, Fan Dang, Xiao-Ping Zhang, Yunhao Liu, Xinlei Chen†"
   },
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "BEANet: An Energy-efficient BLE Solution for High-capacity Equipment Area Network",
     venue: "ACM TOSN",
@@ -674,6 +719,10 @@ const publications = [
     link: "https://dl.acm.org/doi/abs/10.1145/3641280",
     authors: "Yifan Xu, Fan Dang, Kebin Liu, Zhui Zhu, Xinlei Chen, Xu Wang, Xin Miao, Haitian Zhao"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "LSync: A Universal Timeline-Synchronizing Solution for Live Streaming",
     venue: "IEEE TON",
@@ -684,6 +733,10 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/10555015",
     authors: "Fan Dang, Yifan Xu, Rongwu Xu, Xinlei Chen, Yunhao Liu"
   },
+  */
+  /*
+  Commented out after corresponding-author audit:
+  DOI metadata identifies Zhuozhu Jian as corresponding author.
   {
     title: "Path Generation for Wheeled Robots Autonomous Navigation on Vegetated Terrain",
     venue: "IEEE RA-L",
@@ -694,6 +747,7 @@ const publications = [
     link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Ha8rlUgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=Ha8rlUgAAAAJ:b0M2c_1WBrUC",
     authors: "Zhuozhu Jian*, Zejia Liu*, Haoyu Shao, Xueqian Wang, Xinlei Chen, Bin Liang†"
   },
+  */
   {
     title: "A Wearable Low-power Collaborative Sensing System for High-quality SSVEP-BCI Signal Acquisition",
     venue: "IEEE IoT-J",
@@ -722,7 +776,7 @@ const publications = [
     note: "",
     image: asset("images/HMSS.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/9241405/",
-    authors: "Xinlei Chen, Susu Xu, Xinyu Liu, Xiangxiang Xu, Hae Young Noh, Lin Zhang, Pei Zhang"
+    authors: "Xinlei Chen†, Susu Xu, Xinyu Liu, Xiangxiang Xu, Hae Young Noh, Lin Zhang, Pei Zhang"
   },
   {
     title: "H-DrunkWalk: Collaborative and Adaptive Navigation for Heterogeneous MAV Swarm",
@@ -732,7 +786,7 @@ const publications = [
     note: "",
     image: asset("images/H-DrunkWalk.png"),
     link: "https://dl.acm.org/doi/abs/10.1145/3382094",
-    authors: "Xinlei Chen, Carlos Ruiz, Sihan Zeng, Liyao Gao, Aveek Purohit, Stefano Carpin, Pei Zhang"
+    authors: "Xinlei Chen†, Carlos Ruiz, Sihan Zeng, Liyao Gao, Aveek Purohit, Stefano Carpin, Pei Zhang"
   },
   {
     title: "PAS: Prediction-based Actuation System for City-scale Ridesharing Vehicular Mobile Crowdsensing",
@@ -742,7 +796,27 @@ const publications = [
     note: "",
     image: asset("images/PAS.png"),
     link: "https://ieeexplore.ieee.org/ielaam/6488907/9091956/8964368-aam.pdf",
-    authors: "Xinlei Chen, Susu Xu, Jun Han, Haohao Fu, Xidong Pi, Carlee Joe-Wong, Yong Li, Lin Zhang, Hae Young Noh, Pei Zhang"
+    authors: "Xinlei Chen†, Susu Xu, Jun Han, Haohao Fu, Xidong Pi, Carlee Joe-Wong, Yong Li, Lin Zhang, Hae Young Noh, Pei Zhang"
+  },
+  {
+    title: "QoE-Aware Wireless Video Communications for Emotion-Aware Intelligent Systems: A Multi-layered Collaboration Approach",
+    venue: "Information Fusion",
+    type: "Journal",
+    year: "2019",
+    note: "",
+    image: asset("images/PAS.png"),
+    link: "https://doi.org/10.1016/j.inffus.2018.06.007",
+    authors: "Xinlei Chen†, Yulei Zhao, Yong Li"
+  },
+  {
+    title: "CAP: Context-aware App Usage Prediction with Heterogeneous Graph Embedding",
+    venue: "ACM IMWUT",
+    type: "Journal",
+    year: "2019",
+    note: "",
+    image: asset("images/HMSS.png"),
+    link: "https://doi.org/10.1145/3314391",
+    authors: "Xinlei Chen†, Yu Wang, Jiayou He, Shijia Pan, Yong Li, Pei Zhang"
   },
   {
     title: "iLocus: Incentivizing Vehicle Mobility to Optimize Sensing Distribution in Crowd Sensing",
@@ -752,7 +826,27 @@ const publications = [
     note: "",
     image: asset("images/ILOCUS.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/8712442",
-    authors: "Susu Xu*, Xinlei Chen*, Xidong Pi, Carlee Joe-Wong, Pei Zhang, Hae Young Noh"
+    authors: "Susu Xu*, Xinlei Chen*†, Xidong Pi, Carlee Joe-Wong, Pei Zhang, Hae Young Noh"
+  },
+  {
+    title: "Social Trust Aided D2D Communications: Performance Bound and Implementation Mechanism",
+    venue: "IEEE JSAC",
+    type: "Journal",
+    year: "2018",
+    note: "",
+    image: asset("images/BlueKey.png"),
+    link: "https://doi.org/10.1109/jsac.2018.2825658",
+    authors: "Xinlei Chen†, Yulei Zhao, Yong Li, Xu Chen, Ning Ge, Sheng Chen"
+  },
+  {
+    title: "Large-Scale Mobile Fitness App Usage Analysis for Smart Health",
+    venue: "IEEE Communications Magazine",
+    type: "Journal",
+    year: "2018",
+    note: "",
+    image: asset("images/PAS.png"),
+    link: "https://doi.org/10.1109/mcom.2018.1700807",
+    authors: "Xinlei Chen†, Zheqi Zhu, Min Chen, Yong Li"
   },
   {
     title: "Design Experiences in Minimalistic Flying Sensor Node Platform through SensorFly",
@@ -762,7 +856,7 @@ const publications = [
     note: "",
     image: asset("images/DesignExperience.png"),
     link: "https://dl.acm.org/doi/10.1145/3131779",
-    authors: "Xinlei Chen, Aveek Purohit, Shijia Pan, Carlos Ruiz, Jun Han, Zheng Sun, Frank Mokaya, Patric Tague, Pei Zhang"
+    authors: "Xinlei Chen†, Aveek Purohit, Shijia Pan, Carlos Ruiz, Jun Han, Zheng Sun, Frank Mokaya, Patric Tague, Pei Zhang"
   }];
 
 const awards = [
