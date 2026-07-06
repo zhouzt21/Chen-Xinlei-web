@@ -773,7 +773,7 @@ const publications = [
     type: "Journal",
     year: "2019",
     note: "",
-    image: localAsset("images/qoe-aware-infofusion-2019.png"),
+    image: localAsset("images/QoE-Aware.png"),
     link: "https://doi.org/10.1016/j.inffus.2018.06.007",
     authors: "Xinlei Chen†, Yulei Zhao, Yong Li"
   },
@@ -783,7 +783,7 @@ const publications = [
     type: "Journal",
     year: "2019",
     note: "",
-    image: localAsset("images/cap-imwut-2019.png"),
+    image: localAsset("images/CAP.png"),
     link: "https://doi.org/10.1145/3314391",
     authors: "Xinlei Chen†, Yu Wang, Jiayou He, Shijia Pan, Yong Li, Pei Zhang"
   },
@@ -803,7 +803,7 @@ const publications = [
     type: "Journal",
     year: "2018",
     note: "",
-    image: localAsset("images/social-trust-jsac-2018.png"),
+    image: localAsset("images/Social_Trust_Aided_D2D_Communications.png"),
     link: "https://doi.org/10.1109/jsac.2018.2825658",
     authors: "Xinlei Chen†, Yulei Zhao, Yong Li, Xu Chen, Ning Ge, Sheng Chen"
   },
@@ -813,7 +813,7 @@ const publications = [
     type: "Journal",
     year: "2018",
     note: "",
-    image: localAsset("images/mobile-fitness-commag-2018.png"),
+    image: localAsset("images/Large-Scale_Mobile_Fitness.png"),
     link: "https://doi.org/10.1109/mcom.2018.1700807",
     authors: "Xinlei Chen†, Zheqi Zhu, Min Chen, Yong Li"
   },
