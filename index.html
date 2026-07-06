@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Xinlei Chen's academic homepage: AIoT, cyber physical systems, multi-agent systems, smart sensing, mobile computing, and embodied intelligence."
+    >
+    <title>Xinlei Chen | Tsinghua SIGS</title>
+    <link rel="icon" type="image/png" href="https://chen-xinlei.com/images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#about" aria-label="Xinlei Chen homepage">Xinlei Chen</a>
+      <nav class="quick-nav" aria-label="Section navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="#service">Service</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="site-shell">
+      <aside class="profile-sidebar" aria-label="Profile">
+        <div class="profile-card">
+          <img
+            class="profile-photo"
+            src="https://chen-xinlei.com/images/personal-photo.jpg"
+            alt="Xinlei Chen"
+          >
+          <div class="profile-name-block">
+            <h1>Xinlei Chen</h1>
+            <p class="cn-name">&#38472;&#37995;&#30922;</p>
+          </div>
+
+          <p class="profile-title">Associate Professor, Ph.D. Supervisor</p>
+          <p class="profile-affiliation">
+            Tsinghua Shenzhen International Graduate School
+          </p>
+
+          <div class="profile-links" aria-label="Profile links">
+            <a href="mailto:chen.xinlei@sz.tsinghua.edu.cn">Email</a>
+            <a href="https://scholar.google.com/citations?user=Dikeo0kAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noreferrer">Google Scholar</a>
+            <a href="https://chen-xinlei.com/data/CV_Xinlei__20241028.pdf" target="_blank" rel="noreferrer">CV</a>
+          </div>
+
+          <div class="profile-meta">
+            <p><span>Location</span> Shenzhen, China</p>
+            <p><span>Institution</span> Tsinghua SIGS</p>
+            <p><span>Focus</span> AIoT, CPS, multi-agent systems, smart sensing, mobile computing, embodied intelligence</p>
+          </div>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section id="about" class="section-block">
+          <p class="section-kicker">Homepage</p>
+          <h2>About</h2>
+          <div class="about-grid">
+            <div>
+              <p class="lead">
+                Xinlei Chen is an Associate Professor with Tsinghua University SIGS.
+                He received his Ph.D. degree from Carnegie Mellon University under
+                the supervision of Prof. Pei Zhang.
+              </p>
+              <p>
+                His work uses multi-agent collaborative strategies to solve real
+                problems in smart cities and industries on city-level large-scale
+                AIoT platforms. His research spans cyber physical systems,
+                Artificial Internet of Things, ubiquitous and mobile computing,
+                smart sensing, wireless communication and networks, and embodied
+                intelligent systems.
+              </p>
+            </div>
+            <div class="at-a-glance" aria-label="Profile summary">
+              <div>
+                <span>Role</span>
+                <strong>Associate Professor</strong>
+              </div>
+              <div>
+                <span>Home</span>
+                <strong>Tsinghua SIGS</strong>
+              </div>
+              <div>
+                <span>Theme</span>
+                <strong>AIoT for city-scale systems</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="section-block">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Updates</p>
+              <h2>News</h2>
+            </div>
+            <button class="text-button" id="toggle-news" type="button">Show all</button>
+          </div>
+          <ul class="timeline-list" id="news-list"></ul>
+        </section>
+
+        <section id="research" class="section-block">
+          <p class="section-kicker">Directions</p>
+          <h2>Research</h2>
+          <div class="research-grid" id="research-list"></div>
+        </section>
+
+        <section id="projects" class="section-block">
+          <p class="section-kicker">Selected Work</p>
+          <h2>Project Highlights</h2>
+          <div id="project-list"></div>
+        </section>
+
+        <section id="publications" class="section-block">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">Recent and Selected</p>
+              <h2>Publications</h2>
+            </div>
+            <a class="text-link" href="https://scholar.google.com/citations?user=Dikeo0kAAAAJ&hl=zh-CN&oi=ao" target="_blank" rel="noreferrer">Full list on Scholar</a>
+          </div>
+          <div class="filter-row" id="publication-filters" aria-label="Publication filters"></div>
+          <div class="publication-list" id="publication-list"></div>
+        </section>
+
+        <section id="awards" class="section-block">
+          <p class="section-kicker">Recognition</p>
+          <h2>Selected Awards</h2>
+          <ul class="simple-list" id="award-list"></ul>
+        </section>
+
+        <section id="service" class="section-block">
+          <p class="section-kicker">Community</p>
+          <h2>Professional Activities</h2>
+          <ul class="simple-list two-column" id="service-list"></ul>
+        </section>
+
+        <section id="teaching" class="section-block">
+          <p class="section-kicker">Courses</p>
+          <h2>Teaching</h2>
+          <ul class="simple-list" id="teaching-list"></ul>
+        </section>
+
+        <section id="contact" class="section-block">
+          <p class="section-kicker">Contact</p>
+          <h2>Contact and Openings</h2>
+          <div class="contact-panel">
+            <p>
+              For research discussion, collaboration, or prospective student
+              inquiries, please contact Prof. Chen by email.
+            </p>
+            <div class="contact-actions">
+              <a href="mailto:chen.xinlei@sz.tsinghua.edu.cn">chen.xinlei@sz.tsinghua.edu.cn</a>
+              <a href="https://www.sigs.tsinghua.edu.cn/en/" target="_blank" rel="noreferrer">Tsinghua SIGS</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <p>Updated for the new single-page layout prototype.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

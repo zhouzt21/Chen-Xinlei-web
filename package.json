@@ -1,0 +1,12 @@
+{
+  "name": "chen-xinlei-web-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "python -m http.server 8000 --bind 127.0.0.1",
+    "verify": "node scripts/verify-page.cjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
