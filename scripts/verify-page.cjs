@@ -22,7 +22,9 @@ async function openPage(viewport) {
     }
   });
 
-  await page.goto(url, { waitUntil: "networkidle" });
+  await page.goto(url, { waitUntil: "domcontentloaded" });
+  await page.waitForSelector(".publication-item");
+  await page.waitForSelector(".project-card video");
   return { browser, page, errors, badResponses };
 }
 
@@ -30,7 +32,9 @@ async function openPage(viewport) {
   const desktop = await openPage({ width: 1440, height: 1100 });
   await desktop.page.screenshot({
     path: "screenshots/home-desktop.png",
-    fullPage: true
+    fullPage: true,
+    animations: "disabled",
+    timeout: 90000
   });
 
   const counts = await desktop.page.evaluate(() => ({
@@ -53,13 +57,13 @@ async function openPage(viewport) {
       ).length
   );
 
-  await desktop.page.click("#publication-filters button[data-filter=Journal]");
+  await desktop.page.click('#publication-filters button[data-filter-group="type"][data-filter="Journal"]');
   const journalState = await desktop.page.evaluate(() => ({
     visible: [...document.querySelectorAll(".publication-item")].filter(
-      (item) => !item.hidden
+      (item) => !item.classList.contains("is-filtered-out")
     ).length,
     hidden: [...document.querySelectorAll(".publication-item")].filter(
-      (item) => item.hidden
+      (item) => item.classList.contains("is-filtered-out")
     ).length
   }));
 
@@ -76,7 +80,9 @@ async function openPage(viewport) {
   const mobile = await openPage({ width: 390, height: 1200 });
   await mobile.page.screenshot({
     path: "screenshots/home-mobile.png",
-    fullPage: true
+    fullPage: true,
+    animations: "disabled",
+    timeout: 90000
   });
   const mobileOverflow = await mobile.page.evaluate(() => {
     const rootWidth = document.documentElement.clientWidth;
