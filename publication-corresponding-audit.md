@@ -6,6 +6,7 @@ Legend:
 - `keep`: already marked or verified as Xinlei Chen corresponding author.
 - `add`: verified missing item added to the homepage list.
 - `comment_out`: preserved in code comments, hidden from the rendered page.
+- `manual_confirm`: manually confirmed by the requester as Xinlei Chen corresponding author.
 - `needs_review`: evidence is mixed or incomplete; no such item was force-added.
 
 ## Evidence Sources Used
@@ -14,6 +15,7 @@ Legend:
 - Tsinghua SIGS profile `https://www.sigs.tsinghua.edu.cn/cxl_en/main.htm`, where selected publications use `*` for corresponding authors in several older entries.
 - AnySearch search/extract results from DOI, publisher, arXiv HTML, and PDF-indexed pages.
 - DOI/PDF pages were preferred over aggregator snippets when they explicitly stated corresponding authors.
+- Manual confirmation from the requester on 2026-07-06 for entries whose corresponding-author status should override earlier audit uncertainty.
 
 ## Added Or Re-marked As Xinlei Chen Corresponding Author
 
@@ -30,26 +32,27 @@ Legend:
 | add | CAP: Context-aware App Usage Prediction with Heterogeneous Graph Embedding | DOI result lists Xinlei Chen as corresponding author. |
 | add | Social Trust Aided D2D Communications: Performance Bound and Implementation Mechanism | DOI result lists Xinlei Chen as corresponding author. |
 | add | Large-Scale Mobile Fitness App Usage Analysis for Smart Health | DOI result lists Xinlei Chen as corresponding author. |
+| keep, manual_confirm | How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | LSync: A Universal Event-Synchronizing Solution for Live Streaming | Requester confirmed Xinlei Chen is corresponding author; conference and journal entries restored on the homepage. |
+| keep, manual_confirm | DrunkWalk: Collaborative and Adaptive Planning for Navigation of Micro-Aerial Sensor Swarms | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | A Novel Integrated Sensing and Communication Scheme in UAVs-Enabled Vehicular Networks with MARL-Driven Adaptive Control | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | BEANet: An Energy-efficient BLE Solution for High-capacity Equipment Area Network | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | Path Generation for Wheeled Robots Autonomous Navigation on Vegetated Terrain | Requester confirmed Xinlei Chen is corresponding author; entry restored on the homepage. |
+| keep, manual_confirm | Event Camera Meets Mobile Embodied Perception: Abstraction, Algorithm, Acceleration, Application | Requester confirmed Xinlei Chen is corresponding author; kept on the homepage. |
+| keep, manual_confirm | QUIDS: Quality-informed Incentive-driven Multi-agent Dispatching System for Mobile Crowdsensing | Requester confirmed Xinlei Chen is corresponding author; kept on the homepage. |
+| keep, manual_confirm | STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting | Requester confirmed Xinlei Chen is corresponding author; kept on the homepage. |
+| keep, manual_confirm | SmartSpr: A Physics-informed Mobile Sprinkler Scheduling System for Reducing Urban Particulate Matter Pollution | Requester confirmed Xinlei Chen is corresponding author; kept on the homepage. |
 
 ## Commented Out
 
 | Title | Reason |
 | --- | --- |
-| How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace | Searched arXiv and web results; no source found identifying Xinlei Chen as corresponding author. |
-| iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework | Project/arXiv/ICML pages list authors but no corresponding-author evidence for Xinlei Chen. |
 | BlueKey: Exploiting Bluetooth Low Energy for Enhanced Physical-Layer Key Generation | PDF states Fan Dang is the corresponding author. Both conference and journal entries were hidden. |
-| StreamingTag: A Scalable Piracy Tracking Solution for Mobile Streaming Services | Current author list marks other authors with `†`, not Xinlei Chen. |
-| LSync conference and journal entries | No source found identifying Xinlei Chen as corresponding author. |
-| DrunkWalk: Collaborative and Adaptive Planning for Navigation of Micro-Aerial Sensor Swarms | Current legacy author list marks Pei Zhang, not Xinlei Chen, as corresponding author. |
-| A Novel Integrated Sensing and Communication Scheme in UAVs-Enabled Vehicular Networks with MARL-Driven Adaptive Control | No source found identifying Xinlei Chen as corresponding author. |
-| BEANet: An Energy-efficient BLE Solution for High-capacity Equipment Area Network | No source found identifying Xinlei Chen as corresponding author. |
-| Path Generation for Wheeled Robots Autonomous Navigation on Vegetated Terrain | DOI result identifies Zhuozhu Jian as corresponding author, not Xinlei Chen. |
+| StreamingTag: A Scalable Piracy Tracking Solution for Mobile Streaming Services | Current author list marks other authors, not Xinlei Chen, as corresponding authors. |
 
 ## Not Added
 
 | Title | Reason |
 | --- | --- |
 | SniffySquad: Patchiness-Aware Gas Source Localization with Multi-Robot Collaboration | DOI result identifies Yuhan Cheng as corresponding author; not added. |
-| Event Camera Meets Mobile Embodied Perception: Abstraction, Algorithm, Acceleration, Application | Current homepage marks Xinlei Chen as corresponding author; kept as-is, but aggregator result marks Haoyang Wang. If the publisher final version should override the homepage, this needs manual confirmation. |
-| QUIDS and STeP-Diff | Current homepage marks Xinlei Chen as corresponding author; kept as-is, but aggregator snippets did not always mark Xinlei Chen. Manual confirmation recommended if strict publisher-only evidence is required. |
-| SmartSpr | Current homepage marks Xinlei Chen as corresponding author; kept as-is, but aggregator snippets mark Ji Luo. Manual confirmation recommended if strict publisher-only evidence is required. |

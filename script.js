@@ -1,6 +1,7 @@
 const SITE_BASE = "https://chen-xinlei.com/";
 
 const asset = (path) => `${SITE_BASE}${path}`;
+const localAsset = (path) => path;
 
 const news = [
   {
@@ -254,9 +255,6 @@ const projectGroups = [
 ];
 
 const publications = [
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace",
     venue: "ACM KDD 2026 Oral",
@@ -265,12 +263,8 @@ const publications = [
     note: "Oral",
     image: asset("images/Embodied-navigation-bench.png"),
     link: "https://arxiv.org/abs/2604.07973",
-    authors: "Baining Zhao, Ziyou Wang, Jianjie Fang, Zile Zhou, Yanggang Xu, Yatai Ji, Jiacheng Xu, Qian Zhang, Weichen Zhang, Chen Gao, Xinlei Chen"
+    authors: "Baining Zhao, Ziyou Wang, Jianjie Fang, Zile Zhou, Yanggang Xu, Yatai Ji, Jiacheng Xu, Qian Zhang, Weichen Zhang, Chen Gao, Xinlei Chen†"
   },
-  */
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "iWorld-Bench: A Benchmark for Interactive World Models with a Unified Action Generation Framework",
     venue: "ICML 2026",
@@ -279,9 +273,8 @@ const publications = [
     note: "",
     image: asset("images/iworld-bench-overview.png"),
     link: "https://arxiv.org/abs/2605.03941",
-    authors: "Jianjie Fang*, Yingshan Lei*, Qin Wan*, Ziyou Wang, Yuchao Huang, Yongyan Xu, Baining Zhao, Weichen Zhang, Chen Gao, Xinlei Chen, Yong Li"
+    authors: "Jianjie Fang*, Yingshan Lei*, Qin Wan*, Ziyou Wang, Yuchao Huang, Yongyan Xu, Baining Zhao, Weichen Zhang, Chen Gao, Xinlei Chen†, Yong Li"
   },
-  */
   {
     title: "x2-Fusion: Cross-Modality and Cross-Dimension Flow Estimation in Event Edge Space",
     venue: "CVPR 2026 Highlight",
@@ -510,27 +503,23 @@ const publications = [
     authors: "Xinqi Jin*, Fan Dang*†, Qi-An Fu, Lingkun Li, Guanyan Peng, Xinlei Chen, Kebin Liu, Yunhao Liu†"
   },
   */
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "LSync: A Universal Event-Synchronizing Solution for Live Streaming",
     venue: "IEEE INFOCOM 2022",
     type: "Conference",
     year: "2022",
     note: "",
-    image: asset("images/Lsync.png"),
+    image: localAsset("images/lsync-infocom-2022.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/9796933/",
-    authors: "Yifan Xu, Fan Dang, Rongwu Xu, Xinlei Chen, Yunhao Liu"
+    authors: "Yifan Xu, Fan Dang, Rongwu Xu, Xinlei Chen†, Yunhao Liu"
   },
-  */
   {
     title: "Califormer: Leveraging Unlabeled Measurements to Calibrate Sensors with Self-supervised Learning",
     venue: "ACM UbiComp CPD 2023 (WKS)",
     type: "Conference",
     year: "2023",
     note: "",
-    image: asset("images/CaliFormer.png"),
+    image: localAsset("images/califormer-ubicomp-2023.png"),
     link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Ha8rlUgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=Ha8rlUgAAAAJ:EUQCXRtRnyEC",
     authors: "Haoyang Wang*, Yuxuan Liu*, Chenyu Zhao, Jiayou He, Wenbo Ding, Xinlei Chen†"
   },
@@ -540,7 +529,7 @@ const publications = [
     type: "Conference",
     year: "2022",
     note: "",
-    image: asset("images/DeliverSense.png"),
+    image: localAsset("images/deliversense-ubicomp-2022.png"),
     link: "https://dl.acm.org/doi/abs/10.1145/3544793.3560412",
     authors: "Xuecheng Chen, Haoyang Wang, Zuxin Li, Wenbo Ding, Fan Dang, Chengye Wu, Xinlei Chen† \nBest Paper Award (1 out of all submissions)"
   },
@@ -550,24 +539,20 @@ const publications = [
     type: "Conference",
     year: "2018",
     note: "",
-    image: asset("images/PGA.png"),
+    image: localAsset("images/pga-ubicomp-2018.png"),
     link: "https://dl.acm.org/doi/10.1145/3267305.3274179",
     authors: "Xinlei Chen†, Xiangxiang Xu, Xinyu Liu, Shijia Pan, Jiayou He, Hae Young Noh, Lin Zhang, Pei Zhang"
   },
-  /*
-  Commented out after corresponding-author audit:
-  the current source marks Pei Zhang, not Xinlei Chen, as corresponding author.
   {
     title: "DrunkWalk: Collaborative and Adaptive Planning for Navigation of Micro-Aerial Sensor Swarms",
     venue: "ACM SenSys 2015",
     type: "Conference",
     year: "2015",
     note: "",
-    image: asset("images/drunkwalk_SenSys.png"),
+    image: localAsset("images/drunkwalk-sensys-2015.png"),
     link: "https://dl.acm.org/doi/10.1145/2809695.2809724",
-    authors: "Xinlei Chen, Aveek Purohit, Carlos Ruiz Dominguez, Stefano Carpin, Pei Zhang†"
+    authors: "Xinlei Chen†, Aveek Purohit, Carlos Ruiz Dominguez, Stefano Carpin, Pei Zhang†"
   },
-  */
   {
     title: "mmE-Loc: Facilitating Accurate Drone Landing with Ultra-High-Frequency Localization",
     venue: "IEEE TMC",
@@ -592,7 +577,7 @@ const publications = [
     title: "Event Camera Meets Mobile Embodied Perception: Abstraction, Algorithm, Acceleration, Application",
     venue: "ACM CSUR",
     type: "Journal",
-    year: "",
+    year: "2026",
     note: "",
     image: asset("images/Event_Survey.png"),
     link: "https://doi.org/10.1145/3786332",
@@ -608,9 +593,6 @@ const publications = [
     link: "https://ieeexplore.ieee.org/abstract/document/11186147",
     authors: "Haoyang Wang, Jingao Xu, Chenyu Zhao, Yuhan Cheng, Xuecheng Chen, Chaopeng Hong, Xiao-Ping Zhang, Yunhao Liu, Xinlei Chen†"
   },
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "A Novel Integrated Sensing and Communication Scheme in UAVs-Enabled Vehicular Networks with MARL-Driven Adaptive Control",
     venue: "IEEE TMC",
@@ -619,9 +601,8 @@ const publications = [
     note: "",
     image: asset("images/ANovelIntegratedSensing.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/11087623",
-    authors: "Ziyuan Wang, Xiao-Ping Zhang, Wenbo Ding, Yuhan Dong, Xinlei Chen"
+    authors: "Ziyuan Wang, Xiao-Ping Zhang, Wenbo Ding, Yuhan Dong, Xinlei Chen†"
   },
-  */
   /*
   Commented out after corresponding-author audit:
   the available PDF identifies Fan Dang as corresponding author.
@@ -706,9 +687,6 @@ const publications = [
     link: "https://ieeexplore.ieee.org/document/10502270",
     authors: "Xuecheng Chen, Zijian Xiao, Yuhan Cheng, ChenChun Hsia, Haoyang Wang, Jingao Xu, Susu Xu, Fan Dang, Xiao-Ping Zhang, Yunhao Liu, Xinlei Chen†"
   },
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "BEANet: An Energy-efficient BLE Solution for High-capacity Equipment Area Network",
     venue: "ACM TOSN",
@@ -717,44 +695,35 @@ const publications = [
     note: "",
     image: asset("images/BEANet.png"),
     link: "https://dl.acm.org/doi/abs/10.1145/3641280",
-    authors: "Yifan Xu, Fan Dang, Kebin Liu, Zhui Zhu, Xinlei Chen, Xu Wang, Xin Miao, Haitian Zhao"
+    authors: "Yifan Xu, Fan Dang, Kebin Liu, Zhui Zhu, Xinlei Chen†, Xu Wang, Xin Miao, Haitian Zhao"
   },
-  */
-  /*
-  Commented out after corresponding-author audit:
-  no source found that identifies Xinlei Chen as corresponding author.
   {
     title: "LSync: A Universal Timeline-Synchronizing Solution for Live Streaming",
     venue: "IEEE TON",
     type: "Journal",
     year: "2024",
     note: "",
-    image: asset("images/Lsync.png"),
+    image: localAsset("images/lsync-ton-2024.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/10555015",
-    authors: "Fan Dang, Yifan Xu, Rongwu Xu, Xinlei Chen, Yunhao Liu"
+    authors: "Fan Dang, Yifan Xu, Rongwu Xu, Xinlei Chen†, Yunhao Liu"
   },
-  */
-  /*
-  Commented out after corresponding-author audit:
-  DOI metadata identifies Zhuozhu Jian as corresponding author.
   {
     title: "Path Generation for Wheeled Robots Autonomous Navigation on Vegetated Terrain",
     venue: "IEEE RA-L",
     type: "Journal",
     year: "2023",
     note: "",
-    image: asset("images/Path Generation for Wheeled Robots Autonomous.png"),
+    image: localAsset("images/path-generation-ral-2023.png"),
     link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Ha8rlUgAAAAJ&cstart=20&pagesize=80&sortby=pubdate&citation_for_view=Ha8rlUgAAAAJ:b0M2c_1WBrUC",
-    authors: "Zhuozhu Jian*, Zejia Liu*, Haoyu Shao, Xueqian Wang, Xinlei Chen, Bin Liang†"
+    authors: "Zhuozhu Jian*, Zejia Liu*, Haoyu Shao, Xueqian Wang, Xinlei Chen†, Bin Liang†"
   },
-  */
   {
     title: "A Wearable Low-power Collaborative Sensing System for High-quality SSVEP-BCI Signal Acquisition",
     venue: "IEEE IoT-J",
     type: "Journal",
     year: "2021",
     note: "",
-    image: asset("images/A_Warable.png"),
+    image: localAsset("images/wearable-ssvep-bci-2021.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/9542927/",
     authors: "Rui Na, Dezhi Zheng, Ying Sun, Mingzhe Han, Shuai Wang, Shuailei Zhang, Qianxin Hui, Xinlei Chen†, Jun Zhang, Chun Hu"
   },
@@ -764,7 +733,7 @@ const publications = [
     type: "Journal",
     year: "2021",
     note: "",
-    image: asset("images/Ultra_low_power.png"),
+    image: localAsset("images/ultralow-power-smart-gas-meter-2021.png"),
     link: "https://ieeexplore.ieee.org/document/9530553",
     authors: "Ziteng Wang, Chun Hu, Dezhi Zheng, Xinlei Chen†"
   },
@@ -774,7 +743,7 @@ const publications = [
     type: "Journal",
     year: "2020",
     note: "",
-    image: asset("images/HMSS.png"),
+    image: localAsset("images/hmss-tmc-2020.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/9241405/",
     authors: "Xinlei Chen†, Susu Xu, Xinyu Liu, Xiangxiang Xu, Hae Young Noh, Lin Zhang, Pei Zhang"
   },
@@ -784,7 +753,7 @@ const publications = [
     type: "Journal",
     year: "2020",
     note: "",
-    image: asset("images/H-DrunkWalk.png"),
+    image: localAsset("images/h-drunkwalk-tosn-2020.png"),
     link: "https://dl.acm.org/doi/abs/10.1145/3382094",
     authors: "Xinlei Chen†, Carlos Ruiz, Sihan Zeng, Liyao Gao, Aveek Purohit, Stefano Carpin, Pei Zhang"
   },
@@ -794,7 +763,7 @@ const publications = [
     type: "Journal",
     year: "2020",
     note: "",
-    image: asset("images/PAS.png"),
+    image: localAsset("images/pas-iotj-2020.png"),
     link: "https://ieeexplore.ieee.org/ielaam/6488907/9091956/8964368-aam.pdf",
     authors: "Xinlei Chen†, Susu Xu, Jun Han, Haohao Fu, Xidong Pi, Carlee Joe-Wong, Yong Li, Lin Zhang, Hae Young Noh, Pei Zhang"
   },
@@ -804,7 +773,7 @@ const publications = [
     type: "Journal",
     year: "2019",
     note: "",
-    image: asset("images/PAS.png"),
+    image: localAsset("images/qoe-aware-infofusion-2019.png"),
     link: "https://doi.org/10.1016/j.inffus.2018.06.007",
     authors: "Xinlei Chen†, Yulei Zhao, Yong Li"
   },
@@ -814,7 +783,7 @@ const publications = [
     type: "Journal",
     year: "2019",
     note: "",
-    image: asset("images/HMSS.png"),
+    image: localAsset("images/cap-imwut-2019.png"),
     link: "https://doi.org/10.1145/3314391",
     authors: "Xinlei Chen†, Yu Wang, Jiayou He, Shijia Pan, Yong Li, Pei Zhang"
   },
@@ -824,7 +793,7 @@ const publications = [
     type: "Journal",
     year: "2019",
     note: "",
-    image: asset("images/ILOCUS.png"),
+    image: localAsset("images/ilocus-tmc-2019.png"),
     link: "https://ieeexplore.ieee.org/abstract/document/8712442",
     authors: "Susu Xu*, Xinlei Chen*†, Xidong Pi, Carlee Joe-Wong, Pei Zhang, Hae Young Noh"
   },
@@ -834,7 +803,7 @@ const publications = [
     type: "Journal",
     year: "2018",
     note: "",
-    image: asset("images/BlueKey.png"),
+    image: localAsset("images/social-trust-jsac-2018.png"),
     link: "https://doi.org/10.1109/jsac.2018.2825658",
     authors: "Xinlei Chen†, Yulei Zhao, Yong Li, Xu Chen, Ning Ge, Sheng Chen"
   },
@@ -844,7 +813,7 @@ const publications = [
     type: "Journal",
     year: "2018",
     note: "",
-    image: asset("images/PAS.png"),
+    image: localAsset("images/mobile-fitness-commag-2018.png"),
     link: "https://doi.org/10.1109/mcom.2018.1700807",
     authors: "Xinlei Chen†, Zheqi Zhu, Min Chen, Yong Li"
   },
@@ -854,7 +823,7 @@ const publications = [
     type: "Journal",
     year: "2017",
     note: "",
-    image: asset("images/DesignExperience.png"),
+    image: localAsset("images/sensorfly-tosn-2017.png"),
     link: "https://dl.acm.org/doi/10.1145/3131779",
     authors: "Xinlei Chen†, Aveek Purohit, Shijia Pan, Carlos Ruiz, Jun Han, Zheng Sun, Frank Mokaya, Patric Tague, Pei Zhang"
   }];
