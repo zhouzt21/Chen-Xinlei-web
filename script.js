@@ -141,6 +141,16 @@ const projectGroups = [
         media: asset("video/基于高频视觉的无人机.mp4")
       },
       {
+        title: "Long-range Drone Discovery",
+        venue: "ACM SenSys 2026 Demo",
+        text: "A long-range sensing demo that spots small drones before they are visually clear. It uses event-camera motion signals from propellers to detect targets that ordinary image cues can miss.",
+        link: "https://zhouzt21.github.io/EventRadar-web/",
+        linkLabel: "Demo",
+        mediaType: "video",
+        media: asset("video/EventRadar-demo.mp4"),
+        poster: localAsset("images/EventRadar.png")
+      },
+      {
         title: "Thin Obstacle Detection",
         venue: "ACM MobiCom 2025 Poster",
         text: "An event-driven detection demo for thin wires and submillimeter obstacles. It improves safety in low-altitude flight where small obstacles are easily missed by conventional cameras.",
@@ -201,6 +211,16 @@ const projectGroups = [
         link: "https://doi.org/10.1145/3746027.3755703",
         mediaType: "video",
         media: asset("video/Embodied-R.mp4")
+      },
+      {
+        title: "Question-guided Drone Perception",
+        venue: "Project Demo 2026",
+        text: "A drone demo that answers questions by choosing where to look. It connects visual reasoning with flight control so the agent can gather the missing evidence itself.",
+        link: "https://lvmolvmo.github.io/ActiveFly/",
+        linkLabel: "Demo",
+        mediaType: "video",
+        media: asset("video/ActiveFly-Bench-demo.mp4"),
+        poster: localAsset("images/ActiveFly-Bench.png")
       },
       {
         title: "Indoor Target Navigation",
@@ -937,9 +957,10 @@ function renderProjects() {
             <div class="project-grid">
               ${group.items
                 .map((item) => {
+                  const poster = item.poster ? ` poster="${item.poster}"` : "";
                   const media =
                     item.mediaType === "video"
-                      ? `<video src="${item.media}" muted loop autoplay playsinline controls preload="auto"></video>`
+                      ? `<video src="${item.media}"${poster} muted loop autoplay playsinline controls preload="auto"></video>`
                       : `<img src="${item.media}" alt="${item.title}">`;
 
                   return `
@@ -950,7 +971,7 @@ function renderProjects() {
                           <span class="project-venue">${item.venue}</span>
                           ${
                             item.link
-                              ? `<a class="project-paper-link" href="${item.link}" target="_blank" rel="noreferrer">Paper</a>`
+                              ? `<a class="project-paper-link" href="${item.link}" target="_blank" rel="noreferrer">${item.linkLabel || "Paper"}</a>`
                               : ""
                           }
                         </div>
