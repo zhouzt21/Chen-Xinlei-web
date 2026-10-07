@@ -3,6 +3,18 @@ const localAsset = (path) => path;
 
 const news = [
   {
+    date: "2026.09",
+    text: '<span class="news-new"><strong>New!</strong></span> Two works (<a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to Baining Zhao, Pengtao Ma, Ziliang Zhou (co-first authors of EventPrune), and all coauthors!'
+  },
+  {
+    date: "2026.08",
+    text: '<span class="news-new"><strong>New!</strong></span> Our lab member <strong>Nan Zhou</strong>\'s <a href="https://arxiv.org/abs/2512.03369" target="_blank" rel="noreferrer"><strong>FireSentry</strong></a> received the <a href="https://kdd2026.kdd.org/awards/" target="_blank" rel="noreferrer"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a> at <strong>ACM KDD 2026</strong>! Congrats to Nan and all coauthors!'
+  },
+  {
+    date: "2026.07",
+    text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2512.21887" target="_blank" rel="noreferrer"><strong>Aerial World Model</strong></a> is accepted by <strong>ACM MM 2026</strong>! Congrats to Weichen, Peizhi, and all coauthors!'
+  },
+  {
     date: "2026.06",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2604.07973" target="_blank" rel="noreferrer"><strong>Embodied-Navigation-Bench</strong></a> is accepted by <strong>ACM KDD 2026</strong> and selected for <strong>oral (Top 5% of all submissions)</strong>! Congrats to Baining, Ziyou, Jianjie, and all coauthors!'
   },
@@ -20,7 +32,15 @@ const news = [
   },
   {
     date: "2026.02",
+    text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2511.16546" target="_blank" rel="noreferrer"><strong>Progressive Supernet Training</strong></a> is accepted by <strong>CVPR 2026</strong>! Congrats to Xiaoyue and all coauthors!'
+  },
+  {
+    date: "2026.02",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://doi.org/10.1109/JIOT.2026.3651903" target="_blank" rel="noreferrer"><strong>QUIDS</strong></a> is accepted by <strong>IEEE IoT-J</strong>! Congrats to Nan!'
+  },
+  {
+    date: "2026.01",
+    text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2509.14787" target="_blank" rel="noreferrer"><strong>COMPASS</strong></a> is accepted by <strong>ICRA 2026</strong>! Congrats to Qixuan and all coauthors!'
   },
   {
     date: "2025.12",
@@ -56,11 +76,11 @@ const news = [
   },
   {
     date: "2025.05",
-    text: 'Our research project has won <strong>Sliver Prize</strong> at 50th International Exhibition of Inventions Geneva!'
+    text: 'Three works (<a href="https://arxiv.org/abs/2505.24331" target="_blank" rel="noreferrer"><strong>Context-Aware Sentiment Forecasting</strong></a>, <a href="https://arxiv.org/abs/2505.05622" target="_blank" rel="noreferrer"><strong>CityNavAgent</strong></a>, <a href="https://dl.acm.org/doi/10.1145/3715014.3722048" target="_blank" rel="noreferrer"><strong>Urbanvideo-Bench</strong></a>) are accepted by <strong>ACL 2025</strong>! Congrats to Fanhang, Baining, and Weichen!'
   },
   {
-    date: "2025.05",
-    text: 'Three works (<a href="https://arxiv.org/abs/2505.24331" target="_blank" rel="noreferrer"><strong>Context-Aware Sentiment Forecasting</strong></a>, <a href="https://arxiv.org/abs/2505.05622" target="_blank" rel="noreferrer"><strong>CityNavAgent</strong></a>, <a href="https://dl.acm.org/doi/10.1145/3715014.3722048" target="_blank" rel="noreferrer"><strong>Urbanvideo-Bench</strong></a>) are accepted by <strong>ACL 2025</strong>! Congrats to Fanhang, Baining, and Weichen!'
+    date: "2025.04",
+    text: 'Our research project won a <strong>Silver Prize</strong> at the <a href="https://www.inventions-geneva.ch/" target="_blank" rel="noreferrer"><strong>50th International Exhibition of Inventions Geneva</strong></a>!'
   },
   {
     date: "2025.04",
@@ -273,6 +293,56 @@ const projectGroups = [
 ];
 
 const publications = [
+  {
+    title: "WorldVLN: Autoregressive World Action Model for Aerial Vision-Language Navigation",
+    venue: "NeurIPS 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/WorldVLN.png"),
+    link: "https://arxiv.org/abs/2605.15964",
+    authors: "Baining Zhao, Jiacheng Xu, Weicheng Feng, Xin Zhang, Zhaolu Wang, Haoyang Wang, Shilong Ji, Ziyou Wang, Jianjie Fang, Zhiheng Zheng, Weichen Zhang, Yu Shang, Wei Wu, Chen Gao, Xinlei Chen†, Yong Li"
+  },
+  {
+    title: "EventPrune: Cascaded Event-Assisted Token Pruning for Efficient First-Person Dynamic Spatial Reasoning",
+    venue: "NeurIPS 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/EventPrune.png"),
+    link: "https://arxiv.org/abs/2605.19506",
+    authors: "Pengtao Ma, Ziliang Zhou, Ciyu Ruan, Haoyang Wang, Kaiyuan Li, Zihang Gong, Wenhua Ding, Chen Gao, Jingao Xu, Xinlei Chen†"
+  },
+  {
+    title: "Aerial World Model for Long-horizon Visual Generation and Navigation in 3D Space",
+    venue: "ACM MM 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/ANWM.png"),
+    link: "https://arxiv.org/abs/2512.21887",
+    authors: "Weichen Zhang*, Peizhi Tang*, Xin Zeng, Fanhang Man, Shiquan Yu, Zichao Dai, Baining Zhao, Hongjin Chen, Yu Shang, Wei Wu, Chen Gao, Xinlei Chen†, Xin Wang, Yong Li, Wenwu Zhu"
+  },
+  {
+    title: "Progressive Supernet Training for Efficient Visual Autoregressive Modeling",
+    venue: "CVPR 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/Progressive-Supernet.png"),
+    link: "https://arxiv.org/abs/2511.16546",
+    authors: "Xiaoyue Chen*, Yuling Shi*, Kaiyuan Li*, Huandong Wang, Yong Li, Xiaodong Gu, Xinlei Chen†, Mingbao Lin†"
+  },
+  {
+    title: "COMPASS: Confined-space Manipulation Planning with Active Sensing Strategy",
+    venue: "ICRA 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/COMPASS.png"),
+    link: "https://arxiv.org/abs/2509.14787",
+    authors: "Qixuan Li*, Chen Le*, Dongyue Huang, Jincheng Yu†, Xinlei Chen†"
+  },
   {
     title: "How Far Are Large Multimodal Models from Human-Level Spatial Action? A Benchmark for Goal-Oriented Embodied Navigation in Urban Airspace",
     venue: "ACM KDD 2026 Oral",
@@ -847,6 +917,7 @@ const publications = [
   }];
 
 const awards = [
+  "[2026] <a href=\"https://kdd2026.kdd.org/awards/\" target=\"_blank\" rel=\"noreferrer\"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a>, ACM KDD 2026, for <em>FireSentry</em> by Nan Zhou and coauthors.",
   "[2025] <strong>Silver Prize</strong>, the 50th International Exhibition of Inventions Geneva.",
   "[2023] <strong>Best Paper Award</strong>, ACM UbiComp CPD Workshop.",
   "[2022] <strong>National Overseas Early Career Award</strong>, National Science Foundation of China.",
