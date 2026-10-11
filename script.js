@@ -7,6 +7,14 @@ const news = [
     text: '<span class="news-new"><strong>New!</strong></span> Two works (<a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to Baining Zhao, Pengtao Ma, Ziliang Zhou (co-first authors of EventPrune), and all coauthors!'
   },
   {
+    date: "2026.09",
+    text: '<span class="news-new"><strong>New!</strong></span> Team foxlord (<strong>Zhengli Zhang</strong> and <strong>Chi Liu</strong>) won <strong>3rd Place</strong> in the <strong>Spatial Reasoning Track</strong> of the <a href="https://www.codabench.org/competitions/16303/" target="_blank" rel="noreferrer"><strong>EBMV 2026 Challenge</strong></a> at the ECCV 2026 workshop!'
+  },
+  {
+    date: "2026.09",
+    text: '<span class="news-new"><strong>New!</strong></span> Xinlei Chen received the <a href="https://sensys.acm.org/2026/awards.html" target="_blank" rel="noreferrer"><strong>Outstanding Reviewer Award</strong></a> at <strong>ACM/IEEE SenSys 2026</strong>!'
+  },
+  {
     date: "2026.08",
     text: '<span class="news-new"><strong>New!</strong></span> Our lab member <strong>Nan Zhou</strong>\'s <a href="https://arxiv.org/abs/2512.03369" target="_blank" rel="noreferrer"><strong>FireSentry</strong></a> received the <a href="https://kdd2026.kdd.org/awards/" target="_blank" rel="noreferrer"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a> at <strong>ACM KDD 2026</strong>! Congrats to Nan and all coauthors!'
   },
@@ -17,6 +25,10 @@ const news = [
   {
     date: "2026.06",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2604.07973" target="_blank" rel="noreferrer"><strong>Embodied-Navigation-Bench</strong></a> is accepted by <strong>ACM KDD 2026</strong> and selected for <strong>oral (Top 5% of all submissions)</strong>! Congrats to Baining, Ziyou, Jianjie, and all coauthors!'
+  },
+  {
+    date: "2026.06",
+    text: '<span class="news-new"><strong>New!</strong></span> <a href="https://ieeexplore.ieee.org/document/11456773" target="_blank" rel="noreferrer"><strong>STeP-Diff</strong></a> is featured as a <strong>cover article</strong> in <strong>IEEE TKDE</strong> (Vol. 38, No. 6)! Congrats to Nan and all coauthors!'
   },
   {
     date: "2026.05",
@@ -55,6 +67,10 @@ const news = [
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2512.03369" target="_blank" rel="noreferrer"><strong>FireSentry</strong></a> is accepted by <strong>ACM KDD 2026</strong>! Congrats to Nan!'
   },
   {
+    date: "2025.11",
+    text: '<span class="news-new"><strong>New!</strong></span> <strong>Wenhua Ding</strong> won <strong>2nd Place</strong> in the Student Research Competition at <a href="https://www.sigmobile.org/mobicom/2025/awards.html" target="_blank" rel="noreferrer"><strong>ACM MobiCom 2025</strong></a> for the demo <em>HawkEye: Practical In-Flight Obstacle Avoidance with Event Camera and LiDAR Fusion</em>!'
+  },
+  {
     date: "2025.10",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://ieeexplore.ieee.org/abstract/document/11186147" target="_blank" rel="noreferrer"><strong>Aerial shepherds</strong></a> is accepted by <strong>IEEE TMC</strong>! Congrats to Haoyang!'
   },
@@ -65,6 +81,10 @@ const news = [
   {
     date: "2025.09",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2505.22038" target="_blank" rel="noreferrer"><strong>Balanced Token Pruning</strong></a> is accepted by <strong>NeurIPS 2025</strong>! Congrats to Kaiyuan and Xiaoyue!'
+  },
+  {
+    date: "2025.09",
+    text: '<span class="news-new"><strong>New!</strong></span> Xinlei Chen was recognized in the <a href="https://www.sigs.tsinghua.edu.cn/en/2025/0928/c1303a285905/page.psp" target="_blank" rel="noreferrer"><strong>Stanford-Elsevier World\'s Top 2% Scientists lists</strong></a> from <strong>2022 through 2025</strong>!'
   },
   {
     date: "2025.07",
@@ -158,7 +178,8 @@ const projectGroups = [
         text: "A contactless sensing demo that infers drone dynamics from high-frequency propeller motion. It enables passive monitoring without adding onboard sensors.",
         link: "https://arxiv.org/abs/2511.13100",
         mediaType: "video",
-        media: asset("video/基于高频视觉的无人机.mp4")
+        media: asset("video/基于高频视觉的无人机.mp4"),
+        poster: localAsset("images/project-video-cover-09.webp")
       },
       {
         title: "Long-range Drone Discovery",
@@ -176,7 +197,8 @@ const projectGroups = [
         text: "An event-driven detection demo for thin wires and submillimeter obstacles. It improves safety in low-altitude flight where small obstacles are easily missed by conventional cameras.",
         link: "https://doi.org/10.1145/3680207.3765671",
         mediaType: "video",
-        media: asset("video/细线检测的视频.mp4")
+        media: asset("video/细线检测的视频.mp4"),
+        poster: localAsset("images/project-video-cover-15.webp")
       },
       {
         title: "In-flight Obstacle Avoidance",
@@ -184,7 +206,8 @@ const projectGroups = [
         text: "A practical avoidance demo for indoor drone flight in cluttered spaces. It combines fast sensing and depth cues to support rapid, stable reactions.",
         link: "https://dl.acm.org/doi/10.1145/3680207.3765594",
         mediaType: "video",
-        media: asset("video/室内机载高灵敏避障.mp4")
+        media: asset("video/室内机载高灵敏避障.mp4"),
+        poster: localAsset("images/project-video-cover-11.webp")
       },
       {
         title: "High-speed Outdoor Avoidance",
@@ -192,7 +215,8 @@ const projectGroups = [
         text: "A high-speed outdoor avoidance demo for drones facing dynamic obstacles. It highlights low-latency perception and control under fast motion.",
         link: "https://dl.acm.org/doi/10.1145/3680207.3765594",
         mediaType: "video",
-        media: asset("video/室外高速无人机.mp4")
+        media: asset("video/室外高速无人机.mp4"),
+        poster: localAsset("images/project-video-cover-13.webp")
       },
       {
         title: "Event-camera Deraining",
@@ -200,7 +224,8 @@ const projectGroups = [
         text: "A robust perception demo that removes rain interference from event streams. It keeps high-frequency visual input cleaner for navigation and obstacle avoidance in adverse weather.",
         link: "https://arxiv.org/abs/2505.05307",
         mediaType: "video",
-        media: asset("video/去雨演示.mov")
+        media: asset("video/去雨演示.mov"),
+        poster: localAsset("images/project-video-cover-08.webp")
       },
       {
         title: "Precision Drone Landing",
@@ -208,7 +233,8 @@ const projectGroups = [
         text: "A landing demo using complementary high-frequency sensing. It improves localization robustness for safety-critical final approach and touchdown.",
         link: "https://dl.acm.org/doi/10.1145/3715014.3722048",
         mediaType: "video",
-        media: asset("video/mmeloc.mp4")
+        media: asset("video/mmeloc.mp4"),
+        poster: localAsset("images/project-video-cover-05.webp")
       }
     ]
   },
@@ -222,7 +248,8 @@ const projectGroups = [
         text: "A generative demo that predicts future aerial views under controllable motion. It helps agents reason about possible actions before execution.",
         link: "https://doi.org/10.1145/3746027.3758180",
         mediaType: "video",
-        media: asset("video/AirScape.mp4")
+        media: asset("video/AirScape.mp4"),
+        poster: localAsset("images/project-video-cover-02.webp")
       },
       {
         title: "Embodied Spatial Reasoning",
@@ -230,7 +257,8 @@ const projectGroups = [
         text: "A reasoning demo connecting visual perception, language planning, and reinforcement learning. It strengthens spatial decision-making in 3D environments.",
         link: "https://doi.org/10.1145/3746027.3755703",
         mediaType: "video",
-        media: asset("video/Embodied-R.mp4")
+        media: asset("video/Embodied-R.mp4"),
+        poster: localAsset("images/project-video-cover-03.webp")
       },
       {
         title: "Question-guided Drone Perception",
@@ -248,7 +276,8 @@ const projectGroups = [
         text: "A vision-language navigation demo for indoor target search. It uses semantic planning and memory to reduce repeated exploration.",
         link: "https://arxiv.org/abs/2505.05622",
         mediaType: "video",
-        media: asset("video/室内无人机导航.mp4")
+        media: asset("video/室内无人机导航.mp4"),
+        poster: localAsset("images/project-video-cover-10.webp")
       },
       {
         title: "Large-scale Outdoor Search",
@@ -256,7 +285,8 @@ const projectGroups = [
         text: "A drone search demo for large-scale outdoor environments. It shows how aerial agents can explore complex scenes and localize targets beyond small indoor spaces.",
         link: "",
         mediaType: "video",
-        media: asset("video/室外大尺度复杂环境无人机目标搜索demo_draft（1.8第一版）.mp4")
+        media: asset("video/室外大尺度复杂环境无人机目标搜索demo_draft（1.8第一版）.mp4"),
+        poster: localAsset("images/project-video-cover-12.webp")
       }
     ]
   },
@@ -270,7 +300,8 @@ const projectGroups = [
         text: "A multi-robot mapping demo for open-vocabulary scene understanding. It shares compact semantic structure to reduce communication cost.",
         link: "https://ieeexplore.ieee.org/abstract/document/10966246",
         mediaType: "video",
-        media: asset("video/MR-COGraphs_video.mp4")
+        media: asset("video/MR-COGraphs_video.mp4"),
+        poster: localAsset("images/project-video-cover-06.webp")
       },
       {
         title: "Multi-drone Strategic Play",
@@ -278,7 +309,8 @@ const projectGroups = [
         text: "A multi-drone control demo built around a volleyball-style task. It evaluates agile motion and strategic coordination in the same physical setting.",
         link: "https://arxiv.org/abs/2502.01932",
         mediaType: "video",
-        media: asset("video/颠球.mp4")
+        media: asset("video/颠球.mp4"),
+        poster: localAsset("images/project-video-cover-14.webp")
       },
       {
         title: "Autonomous UAV Exploration",
@@ -286,7 +318,8 @@ const projectGroups = [
         text: "An autonomous exploration demo built around skeleton-graph planning. It improves computation efficiency while preserving structured navigation decisions.",
         link: "",
         mediaType: "video",
-        media: asset("video/SCOPE.mp4")
+        media: asset("video/SCOPE.mp4"),
+        poster: localAsset("images/project-video-cover-07.webp")
       }
     ]
   }
@@ -319,7 +352,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "",
-    image: asset("images/ANWM.png"),
+    image: asset("images/ANWM-optimized.webp"),
     link: "https://arxiv.org/abs/2512.21887",
     authors: "Weichen Zhang*, Peizhi Tang*, Xin Zeng, Fanhang Man, Shiquan Yu, Zichao Dai, Baining Zhao, Hongjin Chen, Yu Shang, Wei Wu, Chen Gao, Xinlei Chen†, Xin Wang, Yong Li, Wenwu Zhu"
   },
@@ -339,7 +372,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "",
-    image: asset("images/COMPASS.png"),
+    image: asset("images/COMPASS-optimized.webp"),
     link: "https://arxiv.org/abs/2509.14787",
     authors: "Qixuan Li*, Chen Le*, Dongyue Huang, Jincheng Yu†, Xinlei Chen†"
   },
@@ -349,7 +382,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "Oral",
-    image: asset("images/Embodied-navigation-bench.png"),
+    image: asset("images/Embodied-navigation-bench-optimized.webp"),
     link: "https://arxiv.org/abs/2604.07973",
     authors: "Baining Zhao, Ziyou Wang, Jianjie Fang, Zile Zhou, Yanggang Xu, Yatai Ji, Jiacheng Xu, Qian Zhang, Weichen Zhang, Chen Gao, Xinlei Chen†"
   },
@@ -359,7 +392,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "",
-    image: asset("images/iworld-bench-overview.png"),
+    image: asset("images/iworld-bench-overview-optimized.webp"),
     link: "https://arxiv.org/abs/2605.03941",
     authors: "Jianjie Fang*, Yingshan Lei*, Qin Wan*, Ziyou Wang, Yuchao Huang, Yongyan Xu, Baining Zhao, Weichen Zhang, Chen Gao, Xinlei Chen†, Yong Li"
   },
@@ -369,7 +402,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "Highlight",
-    image: asset("images/X-fusion.jpg"),
+    image: asset("images/X-fusion-optimized.webp"),
     link: "https://arxiv.org/abs/2603.16671",
     authors: "Ruishan Guo*, Ciyu Ruan*, Haoyang Wang*, Zihang Gong, Jingao Xu, Xinlei Chen†"
   },
@@ -379,7 +412,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "",
-    image: asset("images/AircopBench.png"),
+    image: asset("images/AircopBench-optimized.webp"),
     link: "https://arxiv.org/abs/2511.11025",
     authors: "Jirong Zha*, Yuxuan Fan*, Tianyu Zhang, Geng Chen, Yingfeng Chen, Chen Gao, Xinlei Chen†"
   },
@@ -399,7 +432,7 @@ const publications = [
     type: "Conference",
     year: "2026",
     note: "",
-    image: asset("images/FireSentry.png"),
+    image: asset("images/FireSentry-optimized.webp"),
     link: "https://arxiv.org/abs/2512.03369",
     authors: "Nan Zhou, Huandong Wang, Jiahao Li, Han Li, Yali Song, Qiuhua Wang, Yong Li, Xinlei Chen†"
   },
@@ -439,7 +472,7 @@ const publications = [
     type: "Conference",
     year: "2025",
     note: "",
-    image: asset("images/Open3D-VQA.jpg"),
+    image: asset("images/Open3D-VQA-optimized.webp"),
     link: "https://doi.org/10.1145/3746027.3758219",
     authors: "Weichen Zhang*, Zile Zhou*, Xin Zeng*, Liu Xuchen, Jianjie Fang, Chen Gao, Jinqiang Cui, Yong Li, Xinlei Chen†, Xiao-Ping Zhang"
   },
@@ -459,7 +492,7 @@ const publications = [
     type: "Conference",
     year: "2025",
     note: "",
-    image: asset("images/Pre-mamba.png"),
+    image: asset("images/Pre-mamba-optimized.webp"),
     link: "https://arxiv.org/abs/2505.05307",
     authors: "Ciyu Ruan*, Ruishan Guo*, Zihang Gong, Jingao Xu, Wenhan Yang, Xinlei Chen†"
   },
@@ -489,7 +522,7 @@ const publications = [
     type: "Conference",
     year: "2025",
     note: "",
-    image: asset("images/UrbanVideoBench.png"),
+    image: asset("images/UrbanVideoBench-optimized.webp"),
     link: "https://arxiv.org/abs/2503.06157",
     authors: "Baining Zhao*, Jianjie Fang*, Zichao Dai*, Ziyou Wang, Jirong Zha, Weichen Zhang, Chen Gao, Yue Wang, Jinqiang Cui, Xinlei Chen†, Yong Li"
   },
@@ -539,7 +572,7 @@ const publications = [
     type: "Conference",
     year: "2024",
     note: "",
-    image: asset("images/Physics_informed_NN.png"),
+    image: asset("images/Physics_informed_NN-optimized.webp"),
     link: "https://dl.acm.org/doi/10.1145/3637528.3672027",
     authors: "Jiahao Li*, Huandong Wang*, Xinlei Chen†"
   },
@@ -572,7 +605,7 @@ const publications = [
     type: "Conference",
     year: "2024",
     note: "Acceptance ratio: 256/1307=19.5%",
-    image: asset("images/BlueKey.png"),
+    image: asset("images/Bluekey.png"),
     link: "https://ieeexplore.ieee.org/document/10621142",
     authors: "Yawen Zheng, Fan Dang, Zihao Yang, Jinyan Jiang, Xu Wang, Lin Wang, Kebin Liu, Xinlei Chen, Yunhao Liu"
   },
@@ -917,7 +950,11 @@ const publications = [
   }];
 
 const awards = [
+  "[2026] <strong>IEEE TKDE Cover Article</strong>, for <em>STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting</em>, IEEE TKDE, Vol. 38, No. 6.",
+  "[2026] <a href=\"https://sensys.acm.org/2026/awards.html\" target=\"_blank\" rel=\"noreferrer\"><strong>Outstanding Reviewer Award</strong></a>, ACM/IEEE SenSys 2026.",
+  "[2026] <strong>3rd Place</strong>, Spatial Reasoning Track, EBMV 2026 Challenge at the ECCV 2026 workshop, Team foxlord (Zhengli Zhang and Chi Liu).",
   "[2026] <a href=\"https://kdd2026.kdd.org/awards/\" target=\"_blank\" rel=\"noreferrer\"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a>, ACM KDD 2026, for <em>FireSentry</em> by Nan Zhou and coauthors.",
+  "[2025] <strong>2nd Place</strong>, Student Research Competition, ACM MobiCom 2025, awarded to Wenhua Ding for <em>HawkEye: Practical In-Flight Obstacle Avoidance with Event Camera and LiDAR Fusion</em>.",
   "[2025] <strong>Silver Prize</strong>, the 50th International Exhibition of Inventions Geneva.",
   "[2023] <strong>Best Paper Award</strong>, ACM UbiComp CPD Workshop.",
   "[2022] <strong>National Overseas Early Career Award</strong>, National Science Foundation of China.",
@@ -929,6 +966,8 @@ const awards = [
 ];
 
 const services = [
+  "<a href=\"https://www.sigmobile.org/mobicom/2027/committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM MobiCom 2027.",
+  "<a href=\"https://sensys.acm.org/2027/tpc_committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM/IEEE SenSys 2027.",
   "TPC Member, ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems, 2026.",
   "TPC Member, The 23rd ACM Conference on Embedded Networked Sensor Systems, 2025.",
   "TPC Member, The 11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, 2024.",
@@ -1031,7 +1070,7 @@ function renderProjects() {
                   const poster = item.poster ? ` poster="${item.poster}"` : "";
                   const media =
                     item.mediaType === "video"
-                      ? `<video src="${item.media}"${poster} muted loop autoplay playsinline controls preload="auto"></video>`
+                      ? `<video data-src="${item.media}"${poster} muted loop playsinline controls preload="none"></video>`
                       : `<img src="${item.media}" alt="${item.title}">`;
 
                   return `
@@ -1066,7 +1105,7 @@ function publicationMarkup(item) {
   return `
     <article class="publication-item" data-type="${item.type}" data-year="${item.year}">
       <div class="publication-thumb">
-        <img src="${item.image}" alt="${item.title}">
+        <img src="${item.image}" alt="${item.title}" loading="lazy" decoding="async" fetchpriority="low">
       </div>
       <div>
         <h3>${item.title}</h3>
@@ -1081,6 +1120,47 @@ function publicationMarkup(item) {
       </div>
     </article>
   `;
+}
+
+function setupLazyProjectMedia() {
+  const videos = document.querySelectorAll(".project-media video[data-src]");
+  if (!videos.length) return;
+
+  const loadObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const video = entry.target;
+        if (entry.isIntersecting) {
+          video.src = video.dataset.src;
+          video.load();
+          if (video.dataset.inViewport === "true") {
+            video.play().catch(() => {});
+          }
+          loadObserver.unobserve(video);
+        }
+      });
+    },
+    { rootMargin: "160px 0px", threshold: 0.01 }
+  );
+
+  const playbackObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        entry.target.dataset.inViewport = entry.isIntersecting ? "true" : "false";
+        if (entry.isIntersecting && entry.target.src) {
+          entry.target.play().catch(() => {});
+        } else {
+          entry.target.pause();
+        }
+      });
+    },
+    { threshold: 0.25 }
+  );
+
+  videos.forEach((video) => {
+    loadObserver.observe(video);
+    playbackObserver.observe(video);
+  });
 }
 
 function renderPublications() {
@@ -1177,6 +1257,7 @@ function init() {
   // Research section is temporarily hidden until the content is finalized.
   // renderResearch();
   renderProjects();
+  setupLazyProjectMedia();
   renderPublications();
   renderSimpleList("#award-list", awards);
   renderSimpleList("#service-list", services);
