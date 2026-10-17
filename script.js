@@ -167,6 +167,7 @@ const researchAreas = [
   }
 ];
 
+// Only preview clips around 10 MB or smaller should opt into full ahead-preloading.
 const projectGroups = [
   {
     title: "Neuromorphic Perception",
@@ -179,6 +180,7 @@ const projectGroups = [
         link: "https://arxiv.org/abs/2511.13100",
         mediaType: "video",
         media: asset("video/基于高频视觉的无人机.mp4"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-09.webp")
       },
       {
@@ -189,7 +191,7 @@ const projectGroups = [
         linkLabel: "Demo",
         mediaType: "video",
         media: asset("video/EventRadar-demo.mp4"),
-        poster: localAsset("images/EventRadar.png")
+        poster: localAsset("images/EventRadar-poster.webp")
       },
       {
         title: "Thin Obstacle Detection",
@@ -207,6 +209,7 @@ const projectGroups = [
         link: "https://dl.acm.org/doi/10.1145/3680207.3765594",
         mediaType: "video",
         media: asset("video/室内机载高灵敏避障.mp4"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-11.webp")
       },
       {
@@ -225,6 +228,7 @@ const projectGroups = [
         link: "https://arxiv.org/abs/2505.05307",
         mediaType: "video",
         media: asset("video/去雨演示.mov"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-08.webp")
       },
       {
@@ -249,6 +253,7 @@ const projectGroups = [
         link: "https://doi.org/10.1145/3746027.3758180",
         mediaType: "video",
         media: asset("video/AirScape.mp4"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-02.webp")
       },
       {
@@ -268,7 +273,8 @@ const projectGroups = [
         linkLabel: "Demo",
         mediaType: "video",
         media: asset("video/ActiveFly-Bench-demo.mp4"),
-        poster: localAsset("images/ActiveFly-Bench.png")
+        preloadAhead: true,
+        poster: localAsset("images/ActiveFly-Bench-poster.webp")
       },
       {
         title: "Indoor Target Navigation",
@@ -277,6 +283,7 @@ const projectGroups = [
         link: "https://arxiv.org/abs/2505.05622",
         mediaType: "video",
         media: asset("video/室内无人机导航.mp4"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-10.webp")
       },
       {
@@ -319,6 +326,7 @@ const projectGroups = [
         link: "",
         mediaType: "video",
         media: asset("video/SCOPE.mp4"),
+        preloadAhead: true,
         poster: localAsset("images/project-video-cover-07.webp")
       }
     ]
@@ -1070,10 +1078,11 @@ function renderProjects() {
             <div class="project-grid">
               ${group.items
                 .map((item) => {
-                  const poster = item.poster ? ` poster="${item.poster}"` : "";
+                  const poster = item.poster ? ` data-poster-src="${item.poster}"` : "";
+                  const preloadAhead = item.preloadAhead ? ` data-preload-ahead="true"` : "";
                   const media =
                     item.mediaType === "video"
-                      ? `<video data-src="${item.media}"${poster} muted loop playsinline controls preload="none"></video>`
+                      ? `<video data-src="${item.media}"${poster}${preloadAhead} muted loop playsinline controls preload="none"></video>`
                       : `<img src="${item.media}" alt="${item.title}">`;
 
                   return `
@@ -1126,44 +1135,135 @@ function publicationMarkup(item) {
 }
 
 function setupLazyProjectMedia() {
-  const videos = document.querySelectorAll(".project-media video[data-src]");
+  const videos = [...document.querySelectorAll(".project-media video[data-src]")];
   if (!videos.length) return;
 
-  const loadObserver = new IntersectionObserver(
+  const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+  const prefersLessData =
+    connection?.saveData || ["slow-2g", "2g", "3g"].includes(connection?.effectiveType);
+  const canPreloadAhead = !prefersLessData;
+  const posterMargin = prefersLessData ? "700px 0px" : "1400px 0px";
+  let progressiveLoadingStarted = false;
+  let aheadVideo = null;
+  let scrollFrame = 0;
+
+  const attachVideoSource = (video, preload = "metadata") => {
+    if (!video.src) {
+      video.preload = preload;
+      video.src = video.dataset.src;
+      video.load();
+    } else if (preload === "auto" && video.preload !== "auto") {
+      video.preload = "auto";
+      video.load();
+    }
+
+    if (video.dataset.inViewport === "true") {
+      video.play().catch(() => {});
+    }
+  };
+
+  const posterObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         const video = entry.target;
-        if (entry.isIntersecting) {
-          video.src = video.dataset.src;
-          video.load();
-          if (video.dataset.inViewport === "true") {
-            video.play().catch(() => {});
-          }
-          loadObserver.unobserve(video);
-        }
+        if (!entry.isIntersecting || !video.dataset.posterSrc) return;
+
+        video.poster = video.dataset.posterSrc;
+        delete video.dataset.posterSrc;
+        posterObserver.unobserve(video);
       });
     },
-    { rootMargin: "160px 0px", threshold: 0.01 }
+    { rootMargin: posterMargin, threshold: 0.01 }
   );
 
   const playbackObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
+        const video = entry.target;
         entry.target.dataset.inViewport = entry.isIntersecting ? "true" : "false";
-        if (entry.isIntersecting && entry.target.src) {
-          entry.target.play().catch(() => {});
+
+        if (entry.isIntersecting) {
+          if (!progressiveLoadingStarted) startProgressiveLoading();
+          if (!video.src) attachVideoSource(video, "none");
+          if (video.src) video.play().catch(() => {});
+          if (aheadVideo === video) aheadVideo = null;
+          scheduleAheadVideo();
         } else {
-          entry.target.pause();
+          video.pause();
         }
       });
     },
     { threshold: 0.25 }
   );
 
+  function scheduleAheadVideo() {
+    if (!canPreloadAhead) return;
+
+    if (aheadVideo) {
+      const bounds = aheadVideo.getBoundingClientRect();
+      if (aheadVideo.dataset.inViewport === "true") {
+        aheadVideo = null;
+      } else if (bounds.bottom <= 0) {
+        aheadVideo.pause();
+        aheadVideo.preload = "none";
+        aheadVideo.removeAttribute("src");
+        aheadVideo.load();
+        delete aheadVideo.dataset.autoPreloaded;
+        aheadVideo = null;
+      } else {
+        return;
+      }
+    }
+
+    const preloadLimit = window.innerHeight + Math.min(750, window.innerHeight * 0.8);
+    const nextVideo = videos
+      .filter(
+        (video) =>
+          video.dataset.preloadAhead === "true" &&
+          video.dataset.autoPreloaded !== "true" &&
+          video.dataset.inViewport !== "true"
+      )
+      .map((video) => ({ video, top: video.getBoundingClientRect().top }))
+      .filter(({ top }) => top > 0 && top <= preloadLimit)
+      .sort((a, b) => a.top - b.top)[0]?.video;
+
+    if (!nextVideo) return;
+    nextVideo.dataset.autoPreloaded = "true";
+    aheadVideo = nextVideo;
+    attachVideoSource(nextVideo, "auto");
+  }
+
+  function startProgressiveLoading() {
+    if (progressiveLoadingStarted) return;
+    progressiveLoadingStarted = true;
+
+    videos.forEach((video) => {
+      if (video.dataset.posterSrc) posterObserver.observe(video);
+    });
+
+    scheduleAheadVideo();
+  }
+
+  function onScroll() {
+    startProgressiveLoading();
+    if (scrollFrame) return;
+
+    scrollFrame = window.requestAnimationFrame(() => {
+      scrollFrame = 0;
+      scheduleAheadVideo();
+    });
+  }
+
   videos.forEach((video) => {
-    loadObserver.observe(video);
+    video.dataset.inViewport = "false";
     playbackObserver.observe(video);
   });
+
+  window.addEventListener("scroll", onScroll, { passive: true });
+  window.addEventListener("wheel", startProgressiveLoading, { passive: true, once: true });
+  window.addEventListener("touchstart", startProgressiveLoading, { passive: true, once: true });
+
+  if (window.scrollY > 0) startProgressiveLoading();
 }
 
 function renderPublications() {
