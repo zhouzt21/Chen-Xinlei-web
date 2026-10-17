@@ -16,7 +16,7 @@ const news = [
   },
   {
     date: "2026.08",
-    text: '<span class="news-new"><strong>New!</strong></span> Our lab member <strong>Nan Zhou</strong>\'s <a href="https://arxiv.org/abs/2512.03369" target="_blank" rel="noreferrer"><strong>FireSentry</strong></a> received the <a href="https://kdd2026.kdd.org/awards/" target="_blank" rel="noreferrer"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a> at <strong>ACM KDD 2026</strong>! Congrats to Nan and all coauthors!'
+    text: '<span class="news-new"><strong>New!</strong></span> Our lab member <strong>Nan Zhou</strong>\'s <a href="https://arxiv.org/abs/2512.03369" target="_blank" rel="noreferrer"><strong>FireSentry</strong></a> received the <a href="https://kdd2026.kdd.org/awards/" target="_blank" rel="noreferrer"><strong>Best Paper Runner-Up — Datasets and Benchmark Track</strong></a> at <strong>ACM KDD 2026</strong>! Congrats to Nan and all coauthors!'
   },
   {
     date: "2026.07",
@@ -953,7 +953,7 @@ const awards = [
   "[2026] <strong>IEEE TKDE Cover Article</strong>, for <em>STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting</em>, IEEE TKDE, Vol. 38, No. 6.",
   "[2026] <a href=\"https://sensys.acm.org/2026/awards.html\" target=\"_blank\" rel=\"noreferrer\"><strong>Outstanding Reviewer Award</strong></a>, ACM/IEEE SenSys 2026.",
   "[2026] <strong>3rd Place</strong>, Spatial Reasoning Track, EBMV 2026 Challenge at the ECCV 2026 workshop, Team foxlord (Zhengli Zhang and Chi Liu).",
-  "[2026] <a href=\"https://kdd2026.kdd.org/awards/\" target=\"_blank\" rel=\"noreferrer\"><strong>Best Paper Award – Datasets and Benchmark Runner Up</strong></a>, ACM KDD 2026, for <em>FireSentry</em> by Nan Zhou and coauthors.",
+  "[2026] <a href=\"https://kdd2026.kdd.org/awards/\" target=\"_blank\" rel=\"noreferrer\"><strong>Best Paper Runner-Up — Datasets and Benchmark Track</strong></a>, ACM KDD 2026, for <em>FireSentry</em> by Nan Zhou and coauthors.",
   "[2025] <strong>2nd Place</strong>, Student Research Competition, ACM MobiCom 2025, awarded to Wenhua Ding for <em>HawkEye: Practical In-Flight Obstacle Avoidance with Event Camera and LiDAR Fusion</em>.",
   "[2025] <strong>Silver Prize</strong>, the 50th International Exhibition of Inventions Geneva.",
   "[2023] <strong>Best Paper Award</strong>, ACM UbiComp CPD Workshop.",
@@ -966,6 +966,7 @@ const awards = [
 ];
 
 const services = [
+  "Associate Editor, <a href=\"https://jst.tsinghuajournals.com/EN/home\" target=\"_blank\" rel=\"noreferrer\">Journal of Tsinghua University (Science and Technology)</a>.",
   "<a href=\"https://www.sigmobile.org/mobicom/2027/committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM MobiCom 2027.",
   "<a href=\"https://sensys.acm.org/2027/tpc_committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM/IEEE SenSys 2027.",
   "TPC Member, ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems, 2026.",
@@ -985,9 +986,11 @@ const services = [
 ];
 
 const teaching = [
+  "Urban low altitude messenger, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
+  "Data Visualization, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
+  "Introduction to AIoT, 2024-2025 Fall, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
+  "Data Visualization, 2022-2024 Spring, Tsinghua University.",
   "Introduction to AIoT, 2023-2024 Fall, Tsinghua University.",
-  "Data Visualization, 2022-2025 Spring, Tsinghua University.",
-  "Urban low altitude messenger, 2024-2025 Spring, Tsinghua University.",
   "Data Mining: Theory and Algorithms, 2022 Fall, Tsinghua University."
 ];
 
