@@ -3,6 +3,10 @@ const localAsset = (path) => path;
 
 const news = [
   {
+    date: "2026.10",
+    text: '<span class="news-new"><strong>New!</strong></span> Xinlei Chen was included in the <a href="https://www.sigs.tsinghua.edu.cn/2026/1014/c7626a293802/page.htm" target="_blank" rel="noreferrer"><strong>2026 Stanford/Elsevier World\'s Top 2% Scientists list</strong></a> in the <strong>Single-year Impact</strong> category (<a href="https://doi.org/10.17632/btchxktzyw.9" target="_blank" rel="noreferrer">Elsevier data release</a>).'
+  },
+  {
     date: "2026.09",
     text: '<span class="news-new"><strong>New!</strong></span> Two works (<a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to Baining Zhao, Pengtao Ma, Ziliang Zhou (co-first authors of EventPrune), and all coauthors!'
   },
@@ -199,8 +203,8 @@ const projectGroups = [
         text: "An event-driven detection demo for thin wires and submillimeter obstacles. It improves safety in low-altitude flight where small obstacles are easily missed by conventional cameras.",
         link: "https://doi.org/10.1145/3680207.3765671",
         mediaType: "video",
-        media: asset("video/细线检测的视频.mp4"),
-        poster: localAsset("images/project-video-cover-15.webp")
+        media: asset("video/thin-obstacle-detection-en.mp4"),
+        poster: localAsset("images/thin-obstacle-detection-en-poster.webp")
       },
       {
         title: "In-flight Obstacle Avoidance",
