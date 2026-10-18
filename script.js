@@ -8,7 +8,7 @@ const news = [
   },
   {
     date: "2026.09",
-    text: '<span class="news-new"><strong>New!</strong></span> Two works (<a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to Baining Zhao, Pengtao Ma, Ziliang Zhou (co-first authors of EventPrune), and all coauthors!'
+    text: '<span class="news-new"><strong>New!</strong></span> Three works (<a href="https://arxiv.org/abs/2607.03964" target="_blank" rel="noreferrer"><strong>Worldscape-MoE</strong></a>, <a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to all coauthors!'
   },
   {
     date: "2026.09",
@@ -45,6 +45,10 @@ const news = [
   {
     date: "2026.03",
     text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2603.16671" target="_blank" rel="noreferrer"><strong>x<sup>2</sup>-Fusion</strong></a> is accepted by <strong>CVPR 2026</strong> as a <strong>Highlight</strong> paper! Congrats to Ruishan!'
+  },
+  {
+    date: "2026.03",
+    text: '<span class="news-new"><strong>New!</strong></span> <a href="https://arxiv.org/abs/2507.15428" target="_blank" rel="noreferrer"><strong>EgoPrune</strong></a> is accepted by <strong>IEEE ICME 2026</strong>! Congrats to Jiaao, Kaiyuan, and all coauthors!'
   },
   {
     date: "2026.02",
@@ -339,6 +343,16 @@ const projectGroups = [
 
 const publications = [
   {
+    title: "Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control",
+    venue: "NeurIPS 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/Worldscape-MoE-overview.webp"),
+    link: "https://arxiv.org/abs/2607.03964",
+    authors: "Jianjie Fang*, Yongyan Xu*, Ziyou Wang*, Chen Gao*†, Yuchao Huang, Zhaolu Wang, Rongze Tang, Mingyuan Jia, Baining Zhao, Weichen Zhang, Xin Zhang, Haisheng Su, Yu Shang, Wei Wu, Xinlei Chen, Yong Li†"
+  },
+  {
     title: "WorldVLN: Autoregressive World Action Model for Aerial Vision-Language Navigation",
     venue: "NeurIPS 2026",
     type: "Conference",
@@ -357,6 +371,16 @@ const publications = [
     image: asset("images/EventPrune.png"),
     link: "https://arxiv.org/abs/2605.19506",
     authors: "Pengtao Ma, Ziliang Zhou, Ciyu Ruan, Haoyang Wang, Kaiyuan Li, Zihang Gong, Wenhua Ding, Chen Gao, Jingao Xu, Xinlei Chen†"
+  },
+  {
+    title: "EgoPrune: Efficient Token Pruning for Egomotion Video Reasoning in Embodied Agent",
+    venue: "IEEE ICME 2026",
+    type: "Conference",
+    year: "2026",
+    note: "",
+    image: asset("images/EgoPrune-overview.webp"),
+    link: "https://arxiv.org/abs/2507.15428",
+    authors: "Jiaao Li, Kaiyuan Li, Chen Gao, Yong Li, Xinlei Chen"
   },
   {
     title: "Aerial World Model for Long-horizon Visual Generation and Navigation in 3D Space",
