@@ -8,7 +8,7 @@ const news = [
   },
   {
     date: "2026.09",
-    text: '<span class="news-new"><strong>New!</strong></span> Three works (<a href="https://arxiv.org/abs/2607.03964" target="_blank" rel="noreferrer"><strong>Worldscape-MoE</strong></a>, <a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to all coauthors!'
+    text: '<span class="news-new"><strong>New!</strong></span> Two works (<a href="https://arxiv.org/abs/2605.15964" target="_blank" rel="noreferrer"><strong>WorldVLN</strong></a> &amp; <a href="https://arxiv.org/abs/2605.19506" target="_blank" rel="noreferrer"><strong>EventPrune</strong></a>) are accepted by <strong>NeurIPS 2026</strong>! Congrats to all coauthors!'
   },
   {
     date: "2026.09",
