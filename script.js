@@ -985,20 +985,22 @@ const publications = [
     authors: "Xinlei Chen†, Aveek Purohit, Shijia Pan, Carlos Ruiz, Jun Han, Zheng Sun, Frank Mokaya, Patric Tague, Pei Zhang"
   }];
 
-const awards = [
-  "[2026] <strong>IEEE TKDE Cover Article</strong>, for <em>STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting</em>, IEEE TKDE, Vol. 38, No. 6.",
-  "[2026] <a href=\"https://sensys.acm.org/2026/awards.html\" target=\"_blank\" rel=\"noreferrer\"><strong>Outstanding Reviewer Award</strong></a>, ACM/IEEE SenSys 2026.",
-  "[2026] <strong>3rd Place</strong>, Spatial Reasoning Track, EBMV 2026 Challenge at the ECCV 2026 workshop, Team foxlord (Zhengli Zhang and Chi Liu).",
-  "[2026] <a href=\"https://kdd2026.kdd.org/awards/\" target=\"_blank\" rel=\"noreferrer\"><strong>Best Paper Runner-Up — Datasets and Benchmark Track</strong></a>, ACM KDD 2026, for <em>FireSentry</em> by Nan Zhou and coauthors.",
-  "[2025] <strong>2nd Place</strong>, Student Research Competition, ACM MobiCom 2025, awarded to Wenhua Ding for <em>HawkEye: Practical In-Flight Obstacle Avoidance with Event Camera and LiDAR Fusion</em>.",
-  "[2025] <strong>Silver Prize</strong>, the 50th International Exhibition of Inventions Geneva.",
-  "[2023] <strong>Best Paper Award</strong>, ACM UbiComp CPD Workshop.",
-  "[2022] <strong>National Overseas Early Career Award</strong>, National Science Foundation of China.",
-  "[2017] <strong>Best Poster Award</strong>, ACM/IEEE International Conference on Information Processing in Sensor Networks.",
-  "[2016] <strong>Best Demo Award</strong>, ACM Conference on Embedded Networked Sensor Systems.",
-  "[2016] <strong>Best Poster Runner Up Award</strong>, ACM Conference on Embedded Networked Sensor Systems.",
-  "[2013] <strong>Dean Fellowship</strong>, Carnegie Mellon University.",
-  "[2012] <strong>Excellent Master Thesis Award</strong>, Tsinghua University."
+const grants = [
+  "<strong>G15</strong> — Shenzhen Key R&amp;D Program / Computable Element Extraction and Semantic Relationship Construction Technology for Full-Space Modeling, 2026-2027, <strong>Role: PI</strong>, 7.5M CNY (2.3M CNY).",
+  "<strong>G14</strong> — Shenzhen Key R&amp;D Program / Full-Time and Full-Domain Adaptive Dynamic Perception Technology and Equipment System, 2026-2027, <strong>Role: Co-PI</strong>, 7M CNY (2M CNY).",
+  "<strong>G13</strong> — Shenzhen Key Industrial R&amp;D Program for Sustainable Development / Integrated Space-Air-Ground Sensing for Ecological Monitoring and Anomaly Detection, 2026-2028, <strong>Role: Co-PI</strong>, 5M CNY (1M CNY).",
+  "<strong>G12</strong> — Shenzhen-Tsinghua Program for Fundamental and Frontier AI Research / Integrated Development and Testing Platform for Embodied Intelligence, 2026-2030, <strong>Role: co-PI</strong>, 1M CNY.",
+  "<strong>G11</strong> — AGIBOT / Autonomous Continual Learning for Robots, 2026-2027, <strong>Role: PI</strong>, 600K CNY.",
+  "<strong>G10</strong> — Tsinghua University-Meituan Joint Research Program / Detection of Submillimeter Obstacles with Event Cameras for UAV Safe Flying, 2026-2027, <strong>Role: PI</strong>, 200K CNY.",
+  "<strong>G9</strong> — Shenzhen Low-Altitude Economy Program / Foundation Model for Autonomous Coordination and Control of Low-Altitude UAV Swarms, 2025-2026, <strong>Role: Co-PI</strong>, 6M CNY (810K CNY).",
+  "<strong>G8</strong> — Tsinghua University-Meituan Joint Research Program / Robust UAV Perception and Localization in Challenging Environments Using Event Cameras, 2025-2026, <strong>Role: PI</strong>, 230K CNY.",
+  "<strong>G7</strong> — Tencent Collaborative Education Program / Foundations of AI Course Design: Reinforcement Learning for Intelligent Decision-Making, 2025-2026, <strong>Role: PI</strong>, 100K CNY.",
+  "<strong>G6</strong> — NSFC General Grant / Intelligent Sparse Sensing in Large-Scale Complex Environments, 2024-2027, <strong>Role: PI</strong>, 500K CNY.",
+  "<strong>G5</strong> — Tsinghua SIGS Cross-Disciplinary Research and Innovation Fund / Multi-Agent Collaborative Sensing for Fine-Grained Air Pollution Analysis, 2023-2025, <strong>Role: PI</strong>, 250K CNY (175K CNY).",
+  "<strong>G4</strong> — Guangdong Innovative and Entrepreneurial Research Team Program / Research on Human Body Area Network Based on Wearable Technology, 2022-2027, <strong>Role: Co-PI</strong>, 10M CNY (2M CNY).",
+  "<strong>G3</strong> — Overseas Early Career Award / Collaborative Sensing with Lightweight Multi-Agent Systems in Complex Environments, 2022-2024, <strong>Role: PI</strong>, 2M CNY.",
+  "<strong>G2</strong> — National Key R&amp;D Program of China / Rapid Contraband Detection and Collaborative Sensing with Multiple Mobile Platforms in Complex Environments, 2022-2025, <strong>Role: co-PI</strong>, 3.4M CNY (1.3M CNY).",
+  "<strong>G1</strong> — Shenzhen Stabilization Support Program / Mean-Field Game-Based Collaborative Sensing in Multi-Agent Systems, 2022-2024, <strong>Role: PI</strong>, 600K CNY."
 ];
 
 const services = [
@@ -1390,7 +1392,7 @@ function init() {
   renderProjects();
   setupLazyProjectMedia();
   renderPublications();
-  renderSimpleList("#award-list", awards);
+  renderSimpleList("#grant-list", grants);
   renderSimpleList("#service-list", services);
   renderSimpleList("#teaching-list", teaching);
   setupActiveNavigation();
