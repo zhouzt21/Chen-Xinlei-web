@@ -1102,7 +1102,7 @@ const grants = [
   "<strong>G1</strong> — Shenzhen Stabilization Support Program / Mean-Field Game-Based Collaborative Sensing in Multi-Agent Systems, 2022-2024, <strong>Role: PI</strong>, 600K CNY."
 ];
 
-const services = [
+const conferenceServices = [
   "<strong>ACM MobiCom</strong> — Technical Program Committee Member (2027); TPC Co-Chair, PICASSO Workshop (2024).",
   "<strong>ACM SenSys</strong> — Technical Program Committee Member (2025-2027); Web Chair (2018); Outstanding Reviewer Award (2026).",
   "Deputy Leader, Low-Altitude Working Group of Shenzhen International Graduate School, Tsinghua University (2025-present).",
@@ -1118,7 +1118,10 @@ const services = [
   "<strong>ACM UbiComp</strong> — TPC Co-Chair, CPD Workshop (2021); General Co-Chair, CPD Workshop (2018-2020).",
   "Competition Co-Chair, CPS-IoT Week (2020).",
   "Technical Program Committee Member, IJCAI (2019-2020).",
-  "Technical Program Committee Member, AAAI (2019).",
+  "Technical Program Committee Member, AAAI (2019)."
+];
+
+const journalServices = [
   "Associate Editor, Tsinghua Science and Technology (2026-present).",
   "Guest Editor, npj Engineering Intelligence (2026).",
   "Associate Editor, Signal, Image and Video Processing (Springer) (2024-present)."
@@ -1515,7 +1518,8 @@ function init() {
   renderPublications();
   renderAwards();
   renderSimpleList("#grant-list", grants);
-  renderSimpleList("#service-list", services);
+  renderSimpleList("#conference-service-list", conferenceServices);
+  renderSimpleList("#journal-service-list", journalServices);
   renderSimpleList("#teaching-list", teaching);
   setupActiveNavigation();
 }

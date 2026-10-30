@@ -389,6 +389,19 @@ p {
   content: "";
 }
 
+.service-block + .service-block {
+  margin-top: 24px;
+}
+
+.service-subheading {
+  margin: 18px 0 8px;
+  color: var(--accent-strong);
+  font-size: 14px;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .awards-list {
   margin: 0;
   padding: 0;
