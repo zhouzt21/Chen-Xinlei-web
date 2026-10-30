@@ -343,16 +343,6 @@ const projectGroups = [
 
 const publications = [
   {
-    title: "Worldscape-MoE: A Unified Mixture-of-Experts World Model for Scalable Heterogeneous Action Control",
-    venue: "NeurIPS 2026",
-    type: "Conference",
-    year: "2026",
-    note: "",
-    image: asset("images/Worldscape-MoE-overview.webp"),
-    link: "https://arxiv.org/abs/2607.03964",
-    authors: "Jianjie Fang*, Yongyan Xu*, Ziyou Wang*, Chen Gao*†, Yuchao Huang, Zhaolu Wang, Rongze Tang, Mingyuan Jia, Baining Zhao, Weichen Zhang, Xin Zhang, Haisheng Su, Yu Shang, Wei Wu, Xinlei Chen, Yong Li†"
-  },
-  {
     title: "WorldVLN: Autoregressive World Action Model for Aerial Vision-Language Navigation",
     venue: "NeurIPS 2026",
     type: "Conference",
@@ -1113,29 +1103,31 @@ const grants = [
 ];
 
 const services = [
-  "Associate Editor, <a href=\"https://jst.tsinghuajournals.com/EN/home\" target=\"_blank\" rel=\"noreferrer\">Journal of Tsinghua University (Science and Technology)</a>.",
-  "<a href=\"https://www.sigmobile.org/mobicom/2027/committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM MobiCom 2027.",
-  "<a href=\"https://sensys.acm.org/2027/tpc_committee.html\" target=\"_blank\" rel=\"noreferrer\"><strong>TPC Member</strong></a>, ACM/IEEE SenSys 2027.",
-  "TPC Member, ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems, 2026.",
-  "TPC Member, The 23rd ACM Conference on Embedded Networked Sensor Systems, 2025.",
-  "TPC Member, The 11th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation, 2024.",
-  "TPC Member, The 25th International Workshop on Mobile Computing Systems and Applications, 2024.",
-  "TPC Member, The 19th International Conference on Mobility, Sensing and Networking, 2023.",
-  "Leading Guest Editor, Sensors Special Issue: New Trends in Artificial Intelligence of Things, 2023.",
-  "Leading Guest Editor, Applied Sciences Special Issue: Information Fusion and Its Applications for Smart Sensing, 2023.",
-  "General Chair, The 4th TBSI Workshop on Learning Theory, 2022.",
-  "TPC Member, The 27th IEEE International Conference on Parallel and Distributed Systems, 2021.",
-  "TPC Co-Chair of CPD Workshop, ACM International Joint Conference on Pervasive and Ubiquitous Computing, 2019-2021.",
-  "Competition Co-chair, Cyber-Physical Systems and Internet-of-Things Week, 2020.",
-  "TPC Member, International Joint Conference on Artificial Intelligence, 2019-2020.",
-  "TPC Member, The 33rd AAAI Conference on Artificial Intelligence, 2019.",
-  "Web Chair, ACM SenSys and ACM BuildSys, 2018."
+  "<strong>ACM MobiCom</strong> — Technical Program Committee Member (2027); TPC Co-Chair, PICASSO Workshop (2024).",
+  "<strong>ACM SenSys</strong> — Technical Program Committee Member (2025-2027); Web Chair (2018); Outstanding Reviewer Award (2026).",
+  "Deputy Leader, Low-Altitude Working Group of Shenzhen International Graduate School, Tsinghua University (2025-present).",
+  "Deputy Director, Guangdong Engineering Technology Research Center of Low-Altitude Integrated Flight and Safe Evaluation (2026-present).",
+  "General Co-Chair, Strategy Seminar on Low-Altitude Intelligent Technology, IDI Department of Tsinghua SIGS (2026).",
+  "<strong>X-Lake Forum of Shenzhen</strong> — General Co-Chair, Workshop on Low-Altitude Intelligent Technology (2025); General Co-Chair, Workshop on Sustainable Development Technology (2024).",
+  "<strong>ACM BuildSys</strong> — Industrial Relations Chair (2024); Technical Program Committee Member (2024); Web Chair (2018).",
+  "Financial Co-Chair, IEEE ITW (2024).",
+  "Technical Program Committee Member, ACM HotMobile (2024).",
+  "Technical Program Committee Member, International Conference on Mobility, Sensing and Networking (MSN) (2023).",
+  "General Chair, 4th Tsinghua-Berkeley Shenzhen Institute (TBSI) Workshop on Learning Theory (2022).",
+  "<strong>IEEE ICPADS</strong> — IoT &amp; CPS Track Chair (2024); Technical Program Committee Member (2021).",
+  "<strong>ACM UbiComp</strong> — TPC Co-Chair, CPD Workshop (2021); General Co-Chair, CPD Workshop (2018-2020).",
+  "Competition Co-Chair, CPS-IoT Week (2020).",
+  "Technical Program Committee Member, IJCAI (2019-2020).",
+  "Technical Program Committee Member, AAAI (2019).",
+  "Associate Editor, Tsinghua Science and Technology (2026-present).",
+  "Guest Editor, npj Engineering Intelligence (2026).",
+  "Associate Editor, Signal, Image and Video Processing (Springer) (2024-present)."
 ];
 
 const teaching = [
-  "Urban low altitude messenger, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
-  "Data Visualization, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
-  "Introduction to AIoT, 2024-2025 Fall, Tsinghua University. <strong>(Teaching evaluation top 5%)</strong>",
+  "Urban low altitude messenger, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5% university wide)</strong>",
+  "Data Visualization, 2024-2026 Spring, Tsinghua University. <strong>(Teaching evaluation top 5% university wide)</strong>",
+  "Introduction to AIoT, 2024-2025 Fall, Tsinghua University. <strong>(Teaching evaluation top 5% university wide)</strong>",
   "Data Visualization, 2022-2024 Spring, Tsinghua University.",
   "Introduction to AIoT, 2023-2024 Fall, Tsinghua University.",
   "Data Mining: Theory and Algorithms, 2022 Fall, Tsinghua University."
