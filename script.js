@@ -985,6 +985,115 @@ const publications = [
     authors: "Xinlei Chen†, Aveek Purohit, Shijia Pan, Carlos Ruiz, Jun Han, Zheng Sun, Frank Mokaya, Patric Tague, Pei Zhang"
   }];
 
+const awards = [
+  {
+    title: "Selected in Elsevier's World's Top 2% Scientists (Single-year Impact)",
+    years: "2023–2026",
+    organization: "Stanford/Elsevier",
+    highlight: true
+  },
+  {
+    title: "Runner-up for Best Paper Award",
+    years: "2026",
+    organization: "KDD (Dataset &amp; Benchmarks Track)",
+    highlight: true
+  },
+  {
+    title: "Selected as the Cover Paper",
+    years: "2026",
+    organization: 'Paper: <em>STeP-Diff: Spatio-Temporal Physics-Informed Diffusion Models for Mobile Fine-Grained Pollution Forecasting</em><br>IEEE Transactions on Knowledge and Data Engineering (TKDE)',
+    highlight: true
+  },
+  {
+    title: "Outstanding Reviewer Award",
+    years: "2026",
+    organization: "ACM SenSys"
+  },
+  {
+    title: "Best Paper Finalist",
+    years: "2026",
+    organization: "IROS SeMaNa Workshop (Supervised Student Qiuyi Gu etc.)"
+  },
+  {
+    title: "Academic Rising Star Award",
+    years: "2026",
+    organization: "Shenzhen International Graduate School, Tsinghua University (supervised student Nan Zhou). Highest academic honor for students in Tsinghua.",
+    highlight: true
+  },
+  {
+    title: "Silver Medal",
+    years: "2025",
+    organization: "50th International Exhibition of Inventions of Geneva"
+  },
+  {
+    title: "Best Paper Award",
+    years: "2025",
+    organization: "ICLR 2025 Workshop on Embodied Intelligence with LLM in Open City Environment"
+  },
+  {
+    title: "Best Paper Runner-up",
+    years: "2025",
+    organization: "ACM UbiComp/ISWC PICASSO Workshop"
+  },
+  {
+    title: "Outstanding Scientific Research Innovation Award",
+    years: "2025",
+    organization: "27th China Hi-Tech Fair (China's No.1 Technology Exhibition)"
+  },
+  {
+    title: "Outstanding Teacher of the Year",
+    years: "2023–2025",
+    organization: "Shenzhen International Graduate School, Tsinghua University",
+    highlight: true
+  },
+  {
+    title: "Second Place",
+    years: "2025",
+    organization: "ACM MobiCom Student Research Competition (Supervised Students Wenhua Ding)"
+  },
+  {
+    title: "Best Paper Award",
+    years: "2023",
+    organization: "ACM UbiComp CPD Workshop"
+  },
+  {
+    title: "Best Paper Award",
+    years: "2022",
+    organization: "ACM UbiComp CPD Workshop"
+  },
+  {
+    title: "National Overseas Early Career Award",
+    years: "2022",
+    organization: "National Natural Science Foundation of China (NSFC)",
+    highlight: true
+  },
+  {
+    title: "Best Poster Award",
+    years: "2017",
+    organization: "ACM/IEEE IPSN"
+  },
+  {
+    title: "Best Demo Award",
+    years: "2016",
+    organization: "ACM SenSys"
+  },
+  {
+    title: "Best Poster Runner-up Award",
+    years: "2016",
+    organization: "ACM SenSys"
+  },
+  {
+    title: "Dean's Fellowship",
+    years: "2013",
+    organization: "Carnegie Mellon University"
+  },
+  {
+    title: "Excellent Master's Thesis Award",
+    years: "2012",
+    organization: "Tsinghua University"
+  }
+];
+
 const grants = [
   "<strong>G15</strong> — Shenzhen Key R&amp;D Program / Computable Element Extraction and Semantic Relationship Construction Technology for Full-Space Modeling, 2026-2027, <strong>Role: PI</strong>, 7.5M CNY (2.3M CNY).",
   "<strong>G14</strong> — Shenzhen Key R&amp;D Program / Full-Time and Full-Domain Adaptive Dynamic Perception Technology and Equipment System, 2026-2027, <strong>Role: Co-PI</strong>, 7M CNY (2M CNY).",
@@ -1360,6 +1469,26 @@ function renderSimpleList(selector, items) {
   renderHtml(list, items.map((item) => `<li>${item}</li>`).join(""));
 }
 
+function renderAwards() {
+  const list = document.querySelector("#award-list");
+  renderHtml(
+    list,
+    awards
+      .map(
+        (item) => `
+          <li class="award-row${item.highlight ? " is-highlight" : ""}">
+            <span class="award-years">${item.years}</span>
+            <div class="award-details">
+              <h3 class="award-title">${item.title}</h3>
+              <p class="award-organization">${item.organization}</p>
+            </div>
+          </li>
+        `
+      )
+      .join("")
+  );
+}
+
 function setupActiveNavigation() {
   const navLinks = [...document.querySelectorAll(".quick-nav a")];
   const sections = navLinks
@@ -1392,6 +1521,7 @@ function init() {
   renderProjects();
   setupLazyProjectMedia();
   renderPublications();
+  renderAwards();
   renderSimpleList("#grant-list", grants);
   renderSimpleList("#service-list", services);
   renderSimpleList("#teaching-list", teaching);
